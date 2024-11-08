@@ -1,0 +1,65 @@
+@import url("fonts.css");
+@import url("header.css");
+@import url("footer.css");
+@import url("fontawesome-all.min.css");
+:root {
+    --naranja1: #ED8815;
+    --naranja2: #FFE6CA;
+    --color-t-0: black;
+    --color-t-1: white;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+a {
+    text-decoration: none;
+}
+a,
+.cursorp,
+[class*=litem],
+[class^=btn],
+[id^=btn] {
+    cursor: pointer;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+}
+.color-b-n1 {
+    background-color: var(--naranja1);
+}
+.color-b-n2 {
+    background-color: var(--naranja2);
+}
+.color-t-n1 {
+    color: var(--naranja1);
+}
+.color-t-n2 {
+    color: var(--naranja2);
+}
+body {
+    min-height: 100vh;
+    height: 100%;
+    max-height: -webkit-fill-available;
+}
+.main {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+.page {
+    background-color: #ffffff;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 8px;
+}
+.page > * {
+    margin: auto;
+    max-width: 1000px;
+    border: 1px solid rgba(255, 0, 0, 0.212);
+    width: 100%;
+}

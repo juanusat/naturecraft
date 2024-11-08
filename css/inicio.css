@@ -1,0 +1,41 @@
+section.group-cards {
+    margin-block-end: 40px;
+}
+.title-group {
+    background-color: var(--naranja1);
+    color: var(--color-t-1);
+    display: inline-grid;
+    grid-auto-flow: column;
+    grid-gap: 0px 8px;
+    align-items: center;
+    padding-inline: 22px;
+    padding-block: 6px;
+    border-radius: 30px;
+    transition: all 0.3s;
+    margin-block-end: 22px;
+}
+.carrousel-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.carrousel-container .carrousel-arrow {
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+.carrousel-container .carrousel-arrow:hover {
+    background-color: #00000015;
+    color: var(--naranja1)
+}
+.carrousel-items {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px
+}
