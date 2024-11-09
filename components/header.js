@@ -71,7 +71,7 @@ export const createHeader = () => {
             </div>
             <div class="nav-link-clients">
                 <div class="header-nav-box">
-                    <a href=""><span>Inicio</span></a>
+                    <a href="index.html"><span>Inicio</span></a>
                     <a href="about.html"><span>Sobre nosotros</span></a>
                     <a href="blog.html"><span>Blog</span></a>
                     <a href="contact.html"><span>Contacto</span></a>
