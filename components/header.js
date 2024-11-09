@@ -4,6 +4,7 @@ import bd_data from './../data-presets/data1.js';
 
 export const createHeader = () => {
     const header = createElement('header', {
+        className: 'maximize',
         innerHTML:
         /*html*/`
         <div class="header-top">
@@ -71,7 +72,7 @@ export const createHeader = () => {
             <div class="nav-link-clients">
                 <div class="header-nav-box">
                     <a href=""><span>Inicio</span></a>
-                    <a href=""><span>Sobre nosotros</span></a>
+                    <a href="about.html"><span>Sobre nosotros</span></a>
                     <a href=""><span>Blog</span></a>
                     <a href=""><span>Contacto</span></a>
                     <a href=""><span>Promociones</span></a>

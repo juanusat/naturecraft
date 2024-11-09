@@ -23,7 +23,7 @@ export const createFooter = () => {
                 </div>
             </div>
             <div class="footer-col">
-                <a class="footer-col-title" href="#"><span>Sobre nosotros</span></a>
+                <a class="footer-col-title" href="about.html"><span>Sobre nosotros</span></a>
                 <ul>
                     <a href="#"><span>Historia de $BRAND$</span></a>
                     <a href="#"><span>Conoce a los artistas</span></a>
