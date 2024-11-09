@@ -73,20 +73,20 @@ export const createHeader = () => {
                 <div class="header-nav-box">
                     <a href=""><span>Inicio</span></a>
                     <a href="about.html"><span>Sobre nosotros</span></a>
-                    <a href=""><span>Blog</span></a>
-                    <a href=""><span>Contacto</span></a>
-                    <a href=""><span>Promociones</span></a>
-                    <a href=""><span>Soporte</span></a>
-                    <a href=""><span>Tienda</span></a>
+                    <a href="blog.html"><span>Blog</span></a>
+                    <a href="contact.html"><span>Contacto</span></a>
+                    <a href="promotions.html"><span>Promociones</span></a>
+                    <a href="support.html"><span>Soporte</span></a>
+                    <a href="shop.html"><span>Tienda</span></a>
                 </div>
             </div>
             <div class="nav-link-vendors">
                 <div class="header-nav-box">
-                    <a href=""><span>Panel de vendedor</span></a>
-                    <a href=""><span>Gestión de productos</span></a>
-                    <a href=""><span>Órdenes y envíos</span></a>
-                    <a href=""><span>Informes y finanzas</span></a>
-                    <a href=""><span>Comunicaciones</span></a>
+                    <a href="vendor-dashboard.html"><span>Panel de vendedor</span></a>
+                    <a href="vendor-products.html"><span>Gestión de productos</span></a>
+                    <a href="vendor-sales.html"><span>Órdenes y envíos</span></a>
+                    <a href="vendor-finances.html"><span>Informes y finanzas</span></a>
+                    <a href="vendor-messenger.html"><span>Comunicaciones</span></a>
                 </div>
             </div>
         </div>

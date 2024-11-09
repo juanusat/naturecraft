@@ -1,0 +1,156 @@
+.blog-welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-end: 40px;
+    gap: 40px
+}
+
+.blog-content {
+    display: grid;
+    justify-items: center;
+    grid-gap: 22px
+}
+
+.blog-content>* {
+    text-align: center;
+}
+
+.blog-image {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.blog-image img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.btn {
+    background-color: var(--naranja1);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+
+.card-blog-item {
+    background-color: var(--naranja1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-blog-item img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 22px 16px;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    color: var(--color-t-1);
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    text-align: justify;
+    font-size: 1em;
+    color: white;
+    margin-block-end: 6px;
+}
+
+@media (max-width: 770px) {
+    .blog-welcome {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .cards-blog-box {
+        display: grid;
+        justify-items: center;
+        gap: 30px;
+        margin-block-end: 40px;
+    }
+
+    .card-blog-item {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 771px) {
+
+    .cards-blog-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        gap: 30px;
+        margin-block-end: 40px;
+    }
+
+    .blog-content {
+        flex: 1;
+    }
+}
+
+.blog-search-box {
+    display: flex;
+    justify-content: flex-end;
+    margin-block-end: 26px;
+}
+
+
+.blog-search-container {
+    display: flex;
+    align-items: stretch;
+    border: 2px solid var(--naranja1);
+    border-radius: 25px;
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+}
+
+.blog-search-input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 6px 20px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.blog-search-button {
+    background: none;
+    border: none;
+    width: 32px;
+    padding-inline-end: 6px;
+    transition: all 0.3s;
+}
+
+.blog-search-button:hover {
+    background-color: var(--naranja2);
+    color: var(--naranja1);
+}
+
+.blog-search-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.blog-search-input::placeholder {
+    color: #555;
+}
+
+.numbers-pages-box {
+    margin-block-end: 80px;
+    width: fit-content;
+}

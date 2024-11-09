@@ -31,14 +31,14 @@ export const createFooter = () => {
                 </ul>
             </div>
             <div class="footer-col">
-                <a class="footer-col-title" href="#"><span>Blog</span></a>
+                <a class="footer-col-title" href="blog.html"><span>Blog</span></a>
                 <ul>
                     <a href="#"><span>Artículos educativos</span></a>
                     <a href="#"><span>Historias de creación</span></a>
                 </ul>
             </div>
             <div class="footer-col">
-                <a class="footer-col-title" href="#"><span>Contacto</span></a>
+                <a class="footer-col-title" href="contact.html"><span>Contacto</span></a>
                 <ul>
                     <a href="#"><span>Formulario de consultas</span></a>
                     <a href="#"><span>Información de contacto</span></a>
@@ -46,7 +46,7 @@ export const createFooter = () => {
                 </ul>
             </div>
             <div class="footer-col">
-                <a class="footer-col-title" href="#"><span>Soporte</span></a>
+                <a class="footer-col-title" href="support.html"><span>Soporte</span></a>
                 <ul>
                     <a href="#"><span>Preguntas frecuentes</span></a>
                     <a href="#"><span>Chat en vivo</span></a>

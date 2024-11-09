@@ -1,0 +1,48 @@
+.numbers-pages-box {
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: column;
+    align-items: stretch;
+    grid-gap: 16px;
+    overflow: auto;
+    max-width: 100%;
+    grid-template-columns: auto 1fr auto;
+}
+.numbers-pages-box a {
+    border-radius: 80px;
+    height: 50px;
+    width: 50px;
+    background-color: var(--naranja1);
+    display: grid;
+    place-items: center;
+    color: var(--color-t-1);
+    position: relative;
+}
+.numbers-pages-box a::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    transition: all 0.3s;
+}
+.numbers-pages-box a:hover::before {
+    opacity: 0.2;
+}
+.numbers-pages-box a span {
+    position: relative;
+    transition: all 0.3s;
+}
+.numbers-pages-box a:hover span {
+    transform: scale(1.2);
+}
+.numbers-pages-links {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    overflow: auto;
+}
