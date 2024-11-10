@@ -1,7 +1,7 @@
 import { createElement } from './composer.js';  
 
 export const cardCircle = (product) => {  
-    let productSrc  = product.photo || './media/box-empty.png'
+    let productSrc  = './media/products/' + (product.photos[0] || 'box-empty.png')
     const productItem = createElement('a', {
         href: 'product.html?item=' + product.id_product,
         className: 'card-product-circle',
@@ -14,7 +14,7 @@ export const cardCircle = (product) => {
     return productItem
 };
 export const cardProduct = (product) => {  
-    let productSrc  = product.photo || './media/box-empty.png'
+    let productSrc  = './media/products/' + (product.photos[0] || 'box-empty.png')
     const productItem = createElement('a', {
         href: 'product.html?item=' + product.id_product,
         className: 'card-product-item-reg',

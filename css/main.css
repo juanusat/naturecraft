@@ -37,22 +37,6 @@ textarea:focus {
     outline: none;
 }
 
-.color-b-n1 {
-    background-color: var(--naranja1);
-}
-
-.color-b-n2 {
-    background-color: var(--naranja2);
-}
-
-.color-t-n1 {
-    color: var(--naranja1);
-}
-
-.color-t-n2 {
-    color: var(--naranja2);
-}
-
 body {
     min-height: 100vh;
     height: 100%;
