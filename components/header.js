@@ -134,6 +134,12 @@ export const createHeader = () => {
                             </div>`
                         }
                     )
+                    item_result.querySelector('.text').addEventListener('click', function() {
+                        open('product.html?item=' + product.id_product, '_top')
+                    })
+                    item_result.querySelector('.btn-open-in-new-tab').addEventListener('click', function() {
+                        open('product.html?item=' + product.id_product, '_blank')
+                    })
                     searchResults.appendChild(item_result)
                 }
             }
