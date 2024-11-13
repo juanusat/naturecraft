@@ -1,3 +1,5 @@
+@import url(numbers-pages.css);
+
 .product-container {  
     display: grid;  
     grid-template-columns: 1fr 1fr;  
@@ -14,9 +16,29 @@
     display: flex;  
     flex-direction: column;  
 }  
+.product-price {
+    font-size: 18px;
+    margin-block: 10px 22px;
+}
+label[for=quantity] {
+    margin-block-end: 6px;
+}
+#quantity {
+    width: 80px;
+    font-size: 16px;
+    padding: 6px 14px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--naranja1);
+    border-radius: 20px;
+}
 
 .stars {  
-    margin: 10px 0;  
+    margin-block: 2px 24px;
+    display: flex;
+    gap: 4px; 
+    color: var(--naranja1)
 }  
 
 .buttons {  
@@ -42,6 +64,7 @@
     display: grid;  
     grid-template-columns: 1fr auto;
     align-items: center;
+    margin-block-end: 26px;
 }  
 
 .reviews-header h2 {  
@@ -82,11 +105,6 @@
     padding: 8px 16px;  
     font-size: 18px;
     margin: -20px -20px 20px;
-}  
-
-.pagination {  
-    display: flex;  
-    gap: 5px;  
 }  
 
 @media (max-width: 768px) {  
@@ -144,5 +162,85 @@
     border: none;  
     padding: 10px 20px;  
     border-radius: 20px;  
-    cursor: pointer;  
+}
+.btn-add-cart:hover,
+.btn-add-favorites:hover {
+    background-color: var(--naranja1-d);
+}
+.vendor-panel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+}
+.review-stars {
+    margin-block-end: 8px;
+    letter-spacing: 4;
+}
+.review {
+    margin-block-end: 16px;
+    border-style: solid;
+    border-color: transparent;
+    border-block-end-color: #00000026;
+    border-width: 1px;
+    padding-block: 16px;
+}
+.vendor-profile {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+.vendor-profile img {
+    height: 80px;
+    width: 80px;
+    border-radius: 16px;
+}
+.vendor-profile .vendor-name {
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+}
+.btn-message {
+    padding: 8px 22px;
+    background-color: var(--naranja1);
+    color: var(--color-t-1);
+    border-radius: 30px;
+    border: none;
+    transition: all 0.3s;
+}
+.btn-message:hover {
+    background-color: var(--naranja1-d);
+}
+
+
+.field-filters {  
+    padding: 20px;  
+    border: 1px solid #ddd;  
+    border-radius: 5px;  
+    background-color: #f8f8f8;  
+}  
+
+.filter-category, .filter-price, .filter-rating {  
+    margin-bottom: 20px;  
+}  
+
+h4 {  
+    margin-bottom: 10px;  
+    font-size: 1.2em;  
+}  
+
+.filter-category label {  
+    display: block;  
+    margin-bottom: 5px;  
+}  
+
+input[type="range"] {  
+    width: 100%;  
+}  
+
+#priceValue {  
+    display: block;  
+    margin-top: 10px;  
+    font-weight: bold;  
 }

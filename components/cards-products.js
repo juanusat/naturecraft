@@ -13,7 +13,7 @@ export const cardCircle = (product) => {
     });  
     return productItem
 };
-export const cardProduct = (product) => {  
+export const cardProduct = (product, showBtnAddCart = false) => {  
     let productSrc  = './media/products/' + (product.photos[0] || 'box-empty.png')
     const productItem = createElement('a', {
         href: 'product.html?item=' + product.id_product,
@@ -48,5 +48,13 @@ export const cardProduct = (product) => {
             alert('Le dio like a un producto')
         }
     })
+    if (showBtnAddCart) {
+        productItem.innerHTML += /*html*/`
+            <button>
+                <i class="fa-solid fa-plus"></i>
+                <span>Añadir al carrito</span>
+            </button>
+        `
+    }
     return productItem
 };

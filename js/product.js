@@ -13,7 +13,7 @@ function showProductNotFound() {
 function updateDOMWithProduct(product) {  
     const productImageContainer = document.querySelector('.carousel-images');  
     const productTitle = document.querySelector('.product-details h1');  
-    const productPrice = document.querySelector('.product-details p');  
+    const productPrice = document.querySelector('.product-details .product-price');  
     const productStars = document.querySelector('.stars');  
     const productDescription = document.querySelector('.article-details p');  
     const vendorName = document.querySelector('.vendor-info p');  

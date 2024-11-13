@@ -1,0 +1,59 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./media/brand/brand-logo128.png" type="image/png">
+</head>
+
+<body>
+    <div class="site">
+        <div class="main">
+            <div class="page">
+                <link rel="stylesheet" href="./css/cards-product.css">
+                <link rel="stylesheet" href="./css/shop.css">
+                <link rel="stylesheet" href="./css/numbers-pages.css">
+                <section class="shop-filters">
+                    <div class="row-selects">
+                        <div class="btn-toggle-filter-pane">
+                            <i class="fa-solid fa-bars"></i>
+                            <span>Filtros</span>
+                        </div>
+                        <select name="orderby" id="orderby">
+                            <option value="0">Ordenar por: Más relevantes</option>
+                            <option value="0">Ordenar por: Mejor precio</option>
+                            <option value="0">Ordenar por: Mayor precio</option>
+                            <option value="0">Ordenar por: Menor precio</option>
+                            <option value="0">Ordenar por: Más gustados</option>
+                        </select>
+                    </div>
+                </section>
+                <section class="group-cards" id="shop-container">
+                    <div class="grid-products"></div>
+                </section>
+                <div class="numbers-pages-box">
+                    <a href="#"><span><i class="fa-solid fa-angle-left"></i></span></a>
+                    <div class="numbers-pages-links">
+                        <a href="#"><span>1</span></a>
+                        <a href="#"><span>2</span></a>
+                        <a href="#"><span>3</span></a>
+                        <a href="#"><span>4</span></a>
+                        <a href="#"><span>5</span></a>
+                        <a href="#"><span>6</span></a>
+                        <a href="#"><span>7</span></a>
+                        <a href="#"><span>8</span></a>
+                    </div>
+                    <a href="#"><span><i class="fa-solid fa-angle-right"></i></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="js">
+            <script type="module" src="./js/main.js"></script>
+            <script type="module" src="./js/shop.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
