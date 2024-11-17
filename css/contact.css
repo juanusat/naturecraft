@@ -1,0 +1,61 @@
+.container-form {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 18px;
+    border-color: var(--naranja1);
+    display: flex;
+    flex-direction: column;
+}
+.group-form.inputs {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.title-inputs {
+    margin-block-end: 16px;
+    text-align: center;
+}
+.group-form:not(.fwidth) {
+    width: 100%;
+    max-width: 340px;
+}
+.group-form.fwidth {
+    min-height: 20px;
+    background-color: blue;
+}
+.group-form label {
+    width: 100%;
+}
+.group-form .ipt-text,
+.group-form textarea {
+    border: 1px solid var(--naranja1);
+    background-color: var(--naranja2);
+    font-size: 16px;
+    padding: 10px 18px;
+    border-radius: 18px;
+    width: 100%;
+}
+.group-form .ipt-text::placeholder,
+.group-form textarea::placeholder {
+    color: var(--color-t-0);
+}
+.group-form textarea {
+    height: 80px;
+    min-height: 80px;
+    resize: vertical;
+    max-height: 300px;
+    max-width: 100%;
+}
+.group-form .btn-enviar {
+    background-color: var(--naranja1);
+    transition: all 0.3s;
+    color: var(--color-t-1);
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 16px;
+}
+.group-form .btn-enviar:hover {
+    background-color: var(--naranja1-d);
+}
