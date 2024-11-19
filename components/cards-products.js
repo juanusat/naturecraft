@@ -1,6 +1,6 @@
-import { createElement } from './composer.js';  
+import { createElement } from './composer.js';
 
-export const cardCircle = (product) => {  
+export const cardCircle = (product) => {
     let productSrc  = './media/products/' + (product.photos[0] || 'box-empty.png')
     const productItem = createElement('a', {
         href: 'product.html?item=' + product.id_product,
@@ -10,10 +10,10 @@ export const cardCircle = (product) => {
             <img src="${productSrc }" alt="${product.title}">
         </picture>
         `
-    });  
+    });
     return productItem
 };
-export const cardProduct = (product, showBtnAddCart = false) => {  
+export const cardProduct = (product, showBtnAddCart = false) => {
     let productSrc  = './media/products/' + (product.photos[0] || 'box-empty.png')
     const productItem = createElement('a', {
         href: 'product.html?item=' + product.id_product,

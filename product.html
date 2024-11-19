@@ -14,49 +14,48 @@
             <div class="page">
                 <link rel="stylesheet" href="./css/product.css">
                 <link rel="stylesheet" href="./css/numbers-pages.css">
-                <div class="product-container">  
-                    <div class="product-image">  
-                        <div class="carousel">  
-                            <div class="carousel-images">  
-                                <img src="./media/box-empty.png" alt="Sandalias de cáscara de plátano" class="active">  
-                                <img src="./media/box-empty.png" alt="Sandalias de cáscara de plátano">  
-                                <img src="./media/box-empty.png" alt="Sandalias de cáscara de plátano">  
-                            </div>  
-                            <button class="carousel-button prev">&#10094;</button>  
-                            <button class="carousel-button next">&#10095;</button>  
-                        </div>  
-                    </div>  
-                    <div class="product-details">  
-                        <h1>Sandalias de cáscara de cáscara de plátano</h1>  
-                        <p class="product-price">USD 100</p>  
-                        <div class="stars">⭐⭐⭐⭐☆</div>  
-                        <label for="quantity">Cantidad</label>  
-                        <input type="number" id="quantity" value="1" min="1">  
-                        <div class="buttons">  
-                            <button class="btn-add-cart">Añadir al carrito</button>  
-                            <button class="btn-add-favorites">Añadir a favoritos</button>  
-                        </div>  
-                    </div>  
-                </div>  
-                
-                <div class="grid-container">  
-                    <div class="reviews-section">  
-                        <div class="reviews-header">  
-                            <h2>Reseñas del artículo</h2>  
-                            <select>  
-                                <option>Ordenar por: Sugeridos</option>  
-                                <option>Ordenar por: Más Relevantes</option>  
-                                <option>Ordenar por: Más Nuevas</option>  
-                            </select>  
-                        </div>  
-                        <div class="review">  
-                            <div class="review-stars">⭐⭐⭐⭐☆</div>  
+                <div class="product-container">
+                    <div class="product-image">
+                        <div class="carousel">
+                            <div class="carousel-images">
+                                <img src="./media/box-empty.png" alt="Sandalias de cáscara de plátano" class="active">
+                                <img src="./media/box-empty.png" alt="Sandalias de cáscara de plátano">
+                                <img src="./media/box-empty.png" alt="Sandalias de cáscara de plátano">
+                            </div>
+                            <button class="carousel-button prev">&#10094;</button>
+                            <button class="carousel-button next">&#10095;</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h1>Sandalias de cáscara de cáscara de plátano</h1>
+                        <p class="product-price">USD 100</p>
+                        <div class="stars">⭐⭐⭐⭐☆</div>
+                        <label for="quantity">Cantidad</label>
+                        <input type="number" id="quantity" value="1" min="1">
+                        <div class="buttons">
+                            <button class="btn-add-cart">Añadir al carrito</button>
+                            <button class="btn-add-favorites">Añadir a favoritos</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="reviews-section">
+                        <div class="reviews-header">
+                            <h2>Reseñas del artículo</h2>
+                            <select>
+                                <option>Ordenar por: Sugeridos</option>
+                                <option>Ordenar por: Más Relevantes</option>
+                                <option>Ordenar por: Más Nuevas</option>
+                            </select>
+                        </div>
+                        <div class="review">
+                            <div class="review-stars">⭐⭐⭐⭐☆</div>
                             <p>Le hace falta más cáscara de plátano.</p>
-                        </div>  
-                        <div class="review">  
-                            <div class="review-stars">⭐⭐⭐⭐⭐</div>  
+                        </div>
+                        <div class="review">
+                            <div class="review-stars">⭐⭐⭐⭐⭐</div>
                             <p>Le hace falta más cáscara de plátano.</p>
-                        </div>  
+                        </div>
                         <div class="numbers-pages-box">
                             <a href="#"><span><i class="fa-solid fa-angle-left"></i></span></a>
                             <div class="numbers-pages-links">
@@ -71,24 +70,29 @@
                             </div>
                             <a href="#"><span><i class="fa-solid fa-angle-right"></i></span></a>
                         </div>
-                    </div>  
-                    
-                    <div class="details-vendor-container">  
-                        <div class="article-details">  
-                            <h2>Detalles del Artículo</h2>  
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit libero, porttitor vestibulum ante a ridiculus metus quam scelerisque dictumst.</p>  
-                        </div>  
-                        <div class="vendor-info">  
-                            <h2>Conoce al vendedor</h2>  
-                            <div class="vendor-panel-container">
+                    </div>
+                    <div class="details-vendor-container">
+                        <div class="info-panel article-details">
+                            <div class="ip-head">
+                                <div class="ip-title">Detalles del Artículo</div>
+                            </div>
+                            <div class="ip-body">
+                                <p id="produt-description">Lorem ipsum dolor sit amet consectetur adipiscing elit libero, porttitor vestibulum ante a ridiculus metus quam scelerisque dictumst.</p>
+                            </div>
+                        </div>
+                        <div class="info-panel vendor-info">
+                            <div class="ip-head">
+                                <div class="ip-title">Conoce al vendedor</div>
+                            </div>
+                            <div class="ip-body vendor-panel-container">
                                 <div class="vendor-profile">
                                     <img src="./media/box-empty.png" alt="foto del vendedor">
-                                    <div class="vendor-name">Truki20</div>
+                                    <div class="vendor-name" id="produt-vendor">Truki20</div>
                                 </div>
-                                <button class="btn-message">Enviar Mensaje</button>  
+                                <button class="btn-message">Enviar Mensaje</button>
                             </div>
-                        </div>  
-                    </div>  
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

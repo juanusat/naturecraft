@@ -82,10 +82,10 @@ export const createHeader = () => {
             </div>
             <div class="nav-link-vendors">
                 <div class="header-nav-box">
-                    <a href="vendor-dashboard.html"><span>Panel de vendedor</span></a>
+                    <a href="vendor-home.html"><span>Panel de vendedor</span></a>
                     <a href="vendor-products.html"><span>Gestión de productos</span></a>
                     <a href="vendor-sales.html"><span>Órdenes y envíos</span></a>
-                    <a href="vendor-finances.html"><span>Informes y finanzas</span></a>
+                    <a href="vendor-resume.html"><span>Informes y finanzas</span></a>
                     <a href="vendor-messenger.html"><span>Comunicaciones</span></a>
                 </div>
             </div>
@@ -114,7 +114,7 @@ export const createHeader = () => {
         searchResults.innerHTML = ''
         if (query) {
             searchBox.classList.add('open')
-            const sortedProducts = bd_data.products.sort((a, b) => {  
+            const sortedProducts = bd_data.products.sort((a, b) => {
                 return a.title.localeCompare(b.title)
             })
             for (const product of sortedProducts) {
@@ -124,7 +124,7 @@ export const createHeader = () => {
                         new RegExp(`(${query})`, 'gi'),
                         '<strong>$1</strong>'
                     )
-            
+
                     let item_result = createElement('div',
                         {
                             className: 'search-result litem',

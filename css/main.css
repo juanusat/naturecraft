@@ -1,6 +1,7 @@
 @import url("fonts.css");
 @import url("header.css");
 @import url("footer.css");
+@import url("information-pane.css");
 @import url("fontawesome-all.min.css");
 
 :root {
@@ -73,9 +74,8 @@ body {
 }
 
 .page>* {
-    margin: 0 auto;
+    margin-inline: auto;
     max-width: 1000px;
-    border: 1px solid rgba(255, 0, 0, 0.112);
     width: 100%;
 }
 

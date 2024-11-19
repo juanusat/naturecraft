@@ -1,0 +1,28 @@
+.info-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--naranja1);
+    border-radius: 16px;
+    overflow: hidden;
+    width: 100%;
+    margin-block-end: 28px;
+}
+.info-panel .ip-head {
+    width: 100%;
+    background-color: var(--naranja1);
+    color: var(--color-t-1);
+    padding-inline: 22px;
+    font-size: 15px;
+}
+.info-panel .ip-head .ip-title {
+    padding-block: 16px;
+}
+.info-panel .ip-body {
+    width: 100%;
+    padding-inline: 20px;
+    padding-block-end: 20px;
+}

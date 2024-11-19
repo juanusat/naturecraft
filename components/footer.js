@@ -1,7 +1,7 @@
-import { $ } from './utils.js';  
-import { createElement } from './composer.js';  
+import { $ } from './utils.js';
+import { createElement } from './composer.js';
 
-export const createFooter = () => {  
+export const createFooter = () => {
     const footer = createElement('footer', { innerHTML: /*html*/`
         <div class="footer-map">
         <div class="footer-map-box">
@@ -55,6 +55,6 @@ export const createFooter = () => {
             </div>
         </div>
     </div>
-    <div class="footer-sub">Todos los derechos reservados para Fiestas inc malvados y asociados &copy; Pimentel, Perú 2024</div>`});  
-    $('.main').appendChild(footer);  
+    <div class="footer-sub">Todos los derechos reservados para Fiestas inc malvados y asociados &copy; Pimentel, Perú 2024</div>`});
+    $('.main').appendChild(footer);
 };
