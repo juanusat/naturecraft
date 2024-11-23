@@ -85,7 +85,64 @@
                         <div class="ip-title">Historial de pagos</div>
                     </div>
                     <div class="ip-body">
-                        <img src="./media/box-empty.png" style="height: 400px;width:100%;object-fit:cover;" alt="">
+                        <div class="history-billing-box">
+                            <div class="grid-hb-table">
+                                <div class="grid-hb-row thead">
+                                    <div class="grid-hb-cell">ID Pedido</div>
+                                    <div class="grid-hb-cell">Valor total del producto(s)</div>
+                                    <div class="grid-hb-cell">Importe total reembolsado</div>
+                                    <div class="grid-hb-cell">Comisión de $BRAND$</div>
+                                    <div class="grid-hb-cell">Comisión de afiliados</div>
+                                    <div class="grid-hb-cell">Reembolso total de comisión+afiliados</div>
+                                    <div class="grid-hb-cell">Nombres de los productos</div>
+                                </div>
+                                <div class="grid-hb-row">
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                </div>
+                                <div class="grid-hb-row">
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                </div>
+                                <div class="grid-hb-row">
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                </div>
+                                <div class="grid-hb-row">
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                </div>
+                                <div class="grid-hb-row">
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                    <div class="grid-hb-cell"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="info-panel">
@@ -93,21 +150,77 @@
                         <div class="ip-title">Gráfico general de los meses</div>
                     </div>
                     <div class="ip-body">
-                        <img src="./media/box-empty.png" style="height: 400px;width:100%;object-fit:cover;" alt="">
+                        <canvas id="salesChart" width="400" height="400"></canvas>
+                        <div class="legend-box">
+                            <div class="legend" id="legend"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="info-panel">
                     <div class="ip-head">
                         <div class="ip-title">Gestión de facturas</div>
                     </div>
-                    <div class="ip-body">
-                        <img src="./media/box-empty.png" style="height: 400px;width:100%;object-fit:cover;" alt="">
+                    <div class="ip-body section-list-invoices">
+                        <div class="invoice-new">
+                            <div class="title-add-invoice">
+                                <span>Añadir nueva factura</span>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="sub-form">
+                                <div class="grid-from-inputs">
+                                    <label for="">
+                                        <span class="text-label">Número factura</span>
+                                        <input type="number" name="" id="">
+                                    </label>
+                                    <label for="">
+                                        <span class="text-label">Cliente</span>
+                                        <input type="number" name="" id="">
+                                    </label>
+                                    <label for="">
+                                        <span class="text-label">Monto</span>
+                                        <input type="number" name="" id="">
+                                    </label>
+                                    <label for="">
+                                        <span class="text-label">Fecha</span>
+                                        <input type="date" name="" id="">
+                                    </label>
+                                </div>
+                                <div class="btn-add-invoice">Confirmar</div>
+                            </div>
+                        </div>
+                        <div class="invoice-list">
+                            <div class="title-sub-form">Lista de Facturas</div>
+                            <div class="sub-form">
+                                <div class="item-invoice">
+                                    <span class="invoice-item-text">Factura 1</span>
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="item-invoice">
+                                    <span class="invoice-item-text">Factura 2</span>
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="item-invoice">
+                                    <span class="invoice-item-text">Factura 3</span>
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="item-invoice">
+                                    <span class="invoice-item-text">Factura 4</span>
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="item-invoice">
+                                    <span class="invoice-item-text">Factura 5</span>
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="js">
+            <script src="./js/chart.js"></script>
             <script type="module" src="./js/main.js"></script>
+            <script src="./js/vendor-resume.js"></script>
         </div>
     </div>
 </body>
