@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunicaciones</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/communications.css">
+    <link rel="shortcut icon" href="./media/brand/brand-logo128.png" type="image/png">
+</head>
+
+<body>
+    <div class="site">
+        <div class="main">
+            <div class="page">
+                <h1 class="page-title">Comunicaciones</h1>
+
+                <div class="communications-container">
+                        <div class="sidebar">
+                        <h2>Mensajes</h2>
+                        <div class="search-bar">
+                            <input type="text" placeholder="Buscar">
+                            <i class="fa-solid fa-search"></i>
+                        </div>
+                        <ul class="contact-list">
+                            <li class="contact-item">
+                                <div class="contact-avatar"></div>
+                                <span>Vendedor 1</span>
+                            </li>
+                            <li class="contact-item">
+                                <div class="contact-avatar"></div>
+                                <span>Vendedor 2</span>
+                            </li>
+                            <li class="contact-item">
+                                <div class="contact-avatar"></div>
+                                <span>Vendedor 3</span>
+                            </li>
+                            <li class="contact-item">
+                                <div class="contact-avatar"></div>
+                                <span>Vendedor 4</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chat-container">
+                        <div class="chat-messages">
+                            <div class="message user-message">Hola, necesito ayuda con mi pedido.</div>
+                            <div class="message support-message">¡Claro! ¿En qué puedo ayudarte?</div>
+                            <div class="message user-message">Quiero cambiar la dirección de entrega.</div>
+                            <div class="message user-message">Ahora ya no vivo en jlo, evolucione a la victoria. 😏</div>
+                            <div class="message support-message">Por supuesto, te guiaré en el proceso.</div>
+                            <div class="message user-message">Perfecto! Estare atento a tus indicaciones.</div>
+                            <div class="chat-input">
+                                <input type="text" placeholder="Escribe tu mensaje">
+                                <button class="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                <div class="refunds-container">
+                    <div class="refunds-header">
+                        <h2>Gestión de devoluciones y reembolsos</h2>
+                        <div class="search-bar">
+                            <input type="text" placeholder="Buscar Orden">
+                            <i class="fa-solid fa-search"></i>
+                        </div>
+                    </div>
+                    <ul class="refunds-list">
+                        <li class="refund-item">
+                            <span>Orden 1</span>
+                            <button class="refund-btn">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+                        <li class="refund-item">
+                            <span>Orden 2</span>
+                            <button class="refund-btn">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+                        <li class="refund-item">
+                            <span>Orden 3</span>
+                            <button class="refund-btn">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                    <div class="refunds-container">
+                        <div class="refunds-header">
+                            <h2>Gestión de devoluciones y reembolsos</h2>
+                        </div>
+                    <div class="refund-container">
+                        <!-- Buscador -->
+                        <div class="refund-search-bar">
+                            <input type="text" placeholder="Ingrese Orden" class="refund-search-input">
+                            <i class="fa-solid fa-search refund-search-icon"></i>
+                        </div>
+                
+                        <!-- Texto y carrusel -->
+                        <h3 class="refund-products-title">Productos de la Orden</h3>
+                        <div class="refund-carousel-container">
+                            <button class="refund-carousel-btn prev-btn">❮</button>
+                            <div class="refund-product-carousel">
+                                <img src="./media/products/01_botella_bambu1.webp" alt="Producto 1">
+                                <img src="./media/products/07_juguetes_madera.webp" alt="Producto 2">
+                                <img src="./media/products/27_difusores_naturales.webp" alt="Producto 3">
+                            </div>
+                            <button class="refund-carousel-btn next-btn">❯</button>
+                        </div>
+                
+                        <!-- Formulario -->
+                        <form class="refund-form">
+                            <label for="refund-description">Descripción del problema</label>
+                            <textarea id="refund-description" rows="4" placeholder="Describa el problema aquí"></textarea>
+                
+                            <label for="refund-evidence">Imagen de evidencia</label>
+                            <label for="refund-evidence" id="refund-evidence-label">Subir aquí</label>
+                            <input type="file" id="refund-evidence" accept="image/*">
+                
+                            <button type="submit" class="refund-submit-btn">Enviar para Reembolso</button>
+                        </form>
+                    </div>
+                 
+
+            </div>
+        </div>
+        <script src="js/productCarousel.js"></script>
+        <script type="module" src="./js/main.js"></script>
+    </div>
+</body>
+
+</html>

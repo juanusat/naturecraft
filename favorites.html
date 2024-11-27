@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -13,17 +14,350 @@
     <div class="site">
         <div class="main">
             <div class="page">
-                <h1 id="current-site">$SITETITLE$</h1>
-                <p class="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sunt optio molestiae
-                    architecto non iure alias, labore perspiciatis expedita ut, veniam minima excepturi! Laboriosam ab
-                    autem
-                    cumque aperiam illum atque?</p>
+                <link rel="stylesheet" href="./css/cards-product.css">
+                <h1 class="page-title">Artículos Favoritos</h1>
+
+                <section class="favorites-header">
+                    <div class="favorites-search">
+                        <input type="text" placeholder="Busca tus favoritos" />
+                        <i class="fa-solid fa-search search-icon"></i>
+                    </div>
+                </section>
+
+                <section class="group-cards" id="favorites">
+                    <div class="grid-products">
+                        <a href="product.html?item=01" class="card-product-item-reg">
+                            <div class="photo">
+                                <div class="icons-float">
+                                    <div class="cursorp icon-favorite">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div>
+                                <picture>
+                                    <img src="./media/products/01_botella_bambu1.webp"
+                                        alt="Botellas reutilizables de bambú">
+                                </picture>
+                            </div>
+                            <div class="details">
+                                <div class="rating">
+                                    <span>Estrellas</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product-name">Botellas reutilizables de bambú</div>
+                                <div class="price">USD 10.00</div>
+                                <button class="btn-add-cart">
+                                    <i class="fa-solid fa-plus"></i> Añadir al carrito
+                                </button>
+                            </div>
+                        </a>
+
+                        <a href="product.html?item=06" class="card-product-item-reg">
+                            <div class="photo">
+                                <div class="icons-float">
+                                    <div class="cursorp icon-favorite">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div>
+                                <picture>
+                                    <img src="./media/products/06_bolsa_yute.webp" alt="Bolsos de Yute Natural">
+                                </picture>
+                            </div>
+                            <div class="details">
+                                <div class="rating">
+                                    <span>Estrellas</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product-name">Bolsos de "Yute Natural"</div>
+                                <div class="price">USD 8.00</div>
+                                <button class="btn-add-cart">
+                                    <i class="fa-solid fa-plus"></i> Añadir al carrito
+                                </button>
+                            </div>
+                        </a>
+
+                        <a href="product.html?item=10" class="card-product-item-reg">
+                            <div class="photo">
+                                <div class="icons-float">
+                                    <div class="cursorp icon-favorite">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div>
+                                <picture>
+                                    <img src="./media/products/10_cepillo_bambu.webp"
+                                        alt="Cepillos de dientes de bambú">
+                                </picture>
+                            </div>
+                            <div class="details">
+                                <div class="rating">
+                                    <span>Estrellas</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product-name">Cepillos de dientes de bambú</div>
+                                <div class="price">USD 10.00</div>
+                                <button class="btn-add-cart">
+                                    <i class="fa-solid fa-plus"></i> Añadir al carrito
+                                </button>
+                            </div>
+                        </a>
+
+                        <a href="product.html?item=14" class="card-product-item-reg">
+                            <div class="photo">
+                                <div class="icons-float">
+                                    <div class="cursorp icon-favorite">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div>
+                                <picture>
+                                    <img src="./media/products/14_portavasos.webp" alt="Portavasos de corcho natural">
+                                </picture>
+                            </div>
+                            <div class="details">
+                                <div class="rating">
+                                    <span>Estrellas</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product-name">Portavasos de corcho natural</div>
+                                <div class="price">USD 20.00</div>
+                                <button class="btn-add-cart">
+                                    <i class="fa-solid fa-plus"></i> Añadir al carrito
+                                </button>
+                            </div>
+                        </a>
+
+                        <a href="product.html?item=21" class="card-product-item-reg">
+                            <div class="photo">
+                                <div class="icons-float">
+                                    <div class="cursorp icon-favorite">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div>
+                                <picture>
+                                    <img src="./media/products/21_bolsa_malla.webp"
+                                        alt="Bolsa reutilizable de malla natural">
+                                </picture>
+                            </div>
+                            <div class="details">
+                                <div class="rating">
+                                    <span>Estrellas</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product-name">Bolsa reutilizable de malla natural</div>
+                                <div class="price">USD 35.00</div>
+                                <button class="btn-add-cart">
+                                    <i class="fa-solid fa-plus"></i> Añadir al carrito
+                                </button>
+                            </div>
+                        </a>
+
+                        <a href="product.html?item=22" class="card-product-item-reg">
+                            <div class="photo">
+                                <div class="icons-float">
+                                    <div class="cursorp icon-favorite">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div>
+                                <picture>
+                                    <img src="./media/products/22_frascos_vidrio.webp"
+                                        alt="Tarros de Vidrio Decorativos con Tapa de Bambú">
+                                </picture>
+                            </div>
+                            <div class="details">
+                                <div class="rating">
+                                    <span>Estrellas</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product-name">Tarros de Vidrio Decorativos con Tapa de Bambú</div>
+                                <div class="price">USD 40.00</div>
+                                <button class="btn-add-cart">
+                                    <i class="fa-solid fa-plus"></i> Añadir al carrito
+                                </button>
+                            </div>
+                        </a>
+
+                        <a href="product.html?item=26" class="card-product-item-reg">
+                            <div class="photo">
+                                <div class="icons-float">
+                                    <div class="cursorp icon-favorite">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div>
+                                <picture>
+                                    <img src="./media/products/26_alfombra.webp" alt="Alfombrilla de corcho para yoga">
+                                </picture>
+                            </div>
+                            <div class="details">
+                                <div class="rating">
+                                    <span>Estrellas</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product-name">Alfombrilla de corcho para yoga</div>
+                                <div class="price">USD 5.00</div>
+                                <button class="btn-add-cart">
+                                    <i class="fa-solid fa-plus"></i> Añadir al carrito
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section class="group-cards" id="similarFavorites">
+                    <div class="title-group">
+                        <span class="title-group-text">Similares a tus artículos favoritos</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <div class="grid-products">
+                        <a href="product.html?item=30" class="card-product-item-reg">
+                            <div class="photo">
+                                <div class="icons-float">
+                                    <div class="cursorp icon-favorite">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div>
+                                <picture>
+                                    <img src="./media/products/30_cucharas.webp"
+                                        alt="Cucharas de madera natural para cocina">
+                                </picture>
+                            </div>
+                            <div class="details">
+                                <div class="rating">
+                                    <span>Estrellas</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product-name">Cucharas de madera natural para cocina</div>
+                                <div class="price">USD 15.00</div>
+                                <button class="btn-add-cart">
+                                    <i class="fa-solid fa-plus"></i> Añadir al carrito
+                                </button>
+                            </div>
+                        </a>
+
+                        <a href="product.html?item=31" class="card-product-item-reg">
+                            <div class="photo">
+                                <div class="icons-float">
+                                    <div class="cursorp icon-favorite">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div>
+                                <picture>
+                                    <img src="./media/products/31_reloj.webp" alt="Reloj de pared de bambú">
+                                </picture>
+                            </div>
+                            <div class="details">
+                                <div class="rating">
+                                    <span>Estrellas</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product-name">Reloj de pared de bambú</div>
+                                <div class="price">USD 20.00</div>
+                                <button class="btn-add-cart">
+                                    <i class="fa-solid fa-plus"></i> Añadir al carrito
+                                </button>
+                            </div>
+                        </a>
+
+                        <a href="product.html?item=48" class="card-product-item-reg">
+                            <div class="photo">
+                                <div class="icons-float">
+                                    <div class="cursorp icon-favorite">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div>
+                                <picture>
+                                    <img src="./media/products/48_bolsas_serigrafia2.webp"
+                                        alt="Bolsas de tela con serigrafía artesanal">
+                                </picture>
+                            </div>
+                            <div class="details">
+                                <div class="rating">
+                                    <span>Estrellas</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product-name">Bolsas de tela con serigrafía artesanal</div>
+                                <div class="price">USD 5.00</div>
+                                <button class="btn-add-cart">
+                                    <i class="fa-solid fa-plus"></i> Añadir al carrito
+                                </button>
+                            </div>
+                        </a>
+
+                        <a href="product.html?item=02" class="card-product-item-reg">
+                            <div class="photo">
+                                <div class="icons-float">
+                                    <div class="cursorp icon-favorite">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div>
+                                <picture>
+                                    <img src="./media/products/02_boli_ecologico.webp" alt="Bolígrafo ecológico">
+                                </picture>
+                            </div>
+                            <div class="details">
+                                <div class="rating">
+                                    <span>Estrellas</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product-name">Bolígrafo ecológico</div>
+                                <div class="price">USD 15.00</div>
+                                <button class="btn-add-cart">
+                                    <i class="fa-solid fa-plus"></i> Añadir al carrito
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
             </div>
         </div>
         <div class="js">
             <script type="module" src="./js/main.js"></script>
+            <script type="module" src="./js/favorites.js"></script>
         </div>
     </div>
 </body>
-
 </html>

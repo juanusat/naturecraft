@@ -1,0 +1,480 @@
+:root {
+    --primary-color: #ff8c00;
+    --primary-light: #fff5e6;
+    --secondary-color: #ffcc80;
+    --accent-color: #333;
+    --border-color: #ccc;
+    --text-color: #555;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --naranja2: #FFE6CA;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.page-title {
+    font-size: 20px;
+    color: var(--primary-color);
+    text-align: start;
+    margin: 10;
+}
+
+.communications-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.sidebar {
+    width: 30%;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    font-size: 15px;
+    color: var(--black-color);
+    margin-bottom: 15px;
+}
+
+.search-bar {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 15px 10px 40px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    background-color: var(--white-color);
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.search-bar i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: var(--accent-color);
+    font-size: 16px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: var(--primary-light);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-item:hover {
+    background-color: var(--secondary-color);
+}
+
+.contact-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contact-item span {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.chat-messages {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: var(--primary-color);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilos de los mensajes */
+.message {
+    max-width: 70%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+/* Mensajes del usuario */
+.message.user-message {
+    background-color: var(--naranja2);
+    align-self: flex-end;
+}
+
+/* Mensajes del soporte */
+.message.support-message {
+    background-color: var(--secondary-color);
+    align-self: flex-start;
+    color: var(--black-color);
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ocupa todo el espacio disponible */
+    background-color: var(--primary-light);
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+}
+
+.chat-messages {
+    flex-grow: 0; /* El área de mensajes ocupa todo el espacio disponible */
+    padding: 10px;
+}
+
+.chat-container {
+    flex-grow: 1;
+    border-radius: 0px;
+}
+
+.chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--primary-light);
+    border-top: 1px solid var(--secondary-color);
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -10px;
+}
+
+.chat-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.chat-input .send-btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.chat-input .send-btn:hover {
+    background-color: var(--naranja2);
+}
+
+.refunds-container {
+    background-color: var(--white-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.refunds-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: var(--primary-color);
+    border-radius: 10px 10px 0 0;
+    color: var(--white-color);
+}
+
+.refunds-header h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.refunds-header .search-bar {
+    position: relative;
+    width: 250px;
+}
+
+.refunds-header .search-bar input {
+    width: 100%;
+    padding: 10px 15px 10px 40px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    background-color: var(--white-color);
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.refunds-header .search-bar i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: var(--accent-color);
+    font-size: 16px;
+}
+
+.refunds-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    background-color: var(--white-color);
+}
+
+.refunds-list .refund-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-right: 500px;
+    margin-left: 100px;
+    background-color: var(--primary-light);
+}
+
+.refunds-list .refund-item:hover {
+    background-color: var(--secondary-color);
+}
+
+.refunds-list .refund-item span {
+    font-size: 14px;
+    color: var(--text-color);
+    flex-grow: 1;
+}
+
+.refunds-list .refund-btn {
+    background-color: transparent;
+    border: none;
+    color: var(--primary-color);
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+.refunds-list .refund-btn:hover {
+    color: var(--secondary-color);
+}
+
+
+.refund-details-section {
+    margin-top: 20px;
+    background-color: var(--primary-light);
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.refund-title {
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Buscador */
+.refund-search-bar {
+    position: relative;
+    max-width: 400px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.refund-search-input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    background-color: var(--white-color);
+}
+
+.refund-search-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: var(--primary-color);
+    pointer-events: none;
+}
+
+
+.refund-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 0px;
+    background-color: var(--prim);
+    border-radius: 10px;
+    margin-top: 0px;
+}
+
+.refund-products-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.refund-carousel-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    position: relative; 
+}
+
+.refund-product-carousel {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.refund-product-carousel img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.refund-carousel-btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.refund-carousel-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+#refund-description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    background-color: var(--primary-light);
+    width: 42.5%;
+    height: 120px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.refund-form label{
+    margin-bottom: 10px;
+}
+
+.upload-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#refund-evidence-label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    background-color: var(--secondary-color);
+    padding: 55px 150px;
+    color: var(--text-color);
+    border: 2px dashed var(--primary-color);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 550px;
+}
+
+#refund-evidence-label:hover {
+    background-color: var(--secondary-color);
+}
+
+#refund-evidence {
+    display: none;
+}
+
+.refund-submit-btn {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 20px 30px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: center;
+    margin-left: 37%;
+}
+
+.refund-submit-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.refund-product-carousel {
+    display: flex;
+    gap: 10px;
+    overflow: hidden; 
+    width: 100%;
+    justify-content: center;
+}
+
+.refund-product-carousel img {
+    max-width: 100%;
+    height: auto; 
+    object-fit: cover;
+}
+
+.refund-carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    z-index: 10;
+}
+
+.refund-carousel-btn.prev-btn {
+    left: 10px;
+}
+
+.refund-carousel-btn.next-btn {
+    right: 10px;
+}
+
+.page{
+    margin-bottom: 15px;
+}
