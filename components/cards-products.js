@@ -50,7 +50,7 @@ export const cardProduct = (product, showBtnAddCart = false) => {
     })
     if (showBtnAddCart) {
         productItem.innerHTML += /*html*/`
-            <button>
+            <button class="btn-add-cart">
                 <i class="fa-solid fa-plus"></i>
                 <span>Añadir al carrito</span>
             </button>

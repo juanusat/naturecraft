@@ -28,6 +28,8 @@
 }
 
 .card-product-item-reg {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     padding: 8px;
     border-radius: 8px;
     transition: all 0.3s;
@@ -89,4 +91,20 @@
 }
 .card-product-item-reg .details .price {
     text-align: end;
+}
+.card-product-item-reg .btn-add-cart {
+    background-color: var(--naranja1);
+    color: var(--color-t-1);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    float: left;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-product-item-reg .btn-add-cart:hover {
+    background-color: var(--naranja1-d);
 }
