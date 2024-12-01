@@ -1,13 +1,6 @@
 .title-group-text {
     margin-inline-end: 8px;
 }
-.page-title {
-    font-size: 20px;
-    color: var(--naranja1);
-    text-align: start;
-    margin: 10;
-}
-
 .favorites-header {
     display: flex;
     align-items: center;

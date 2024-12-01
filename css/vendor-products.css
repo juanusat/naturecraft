@@ -1,0 +1,128 @@
+form.product-form {
+    width: 100%;
+    max-width: 700px;
+    margin-inline: auto;
+}
+
+
+form.product-form label {
+    font-size: 14px;
+    color: var(--color-t-0);
+    margin-bottom: 16px;
+    display: block;
+}
+
+form.product-form input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff0e6;
+}
+
+form.product-form select,
+#product-price {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff0e6;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form.product-form input:focus,
+form.product-form textarea:focus,
+form.product-form select:focus,
+#product-price:focus {
+    box-shadow: 0 0 8px var(--naranja1);
+    outline: none;
+    border-color: var(--naranja1);
+}
+
+form.product-form textarea {
+    width: 100%;
+    max-width: 400px;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff0e6;
+    resize: none;
+}
+
+#product-image-label {
+    display: inline-block;
+    background-color: #fff0e6;
+    padding: 10px 20px;
+    color: var(--color-t-0);
+    border: 2px dashed var(--naranja1);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#product-image-label:hover {
+    background-color: var(--naranja1);
+    color: var(--color-t-1);
+    transform: scale(1.05);
+}
+
+#product-image {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+form.product-form textarea {
+    resize: none;
+}
+
+.btn-form-action {
+    background-color: var(--naranja1);
+    color: var(--color-t-1);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s;
+}
+.btn-form-action:hover {
+    background-color: var(--naranja1-d);
+}
+
+.search-container {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.search-container .search-input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border: 1px solid var(--naranja1);
+    border-radius: 20px;
+    font-size: 16px;
+}
+.search-container .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: var(--color-t-0);
+    font-size: 16px;
+    pointer-events: none;
+}

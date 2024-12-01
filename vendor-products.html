@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitio de ejemplo</title>
+    <title>Gestión de Productos</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="shortcut icon" href="./media/brand/brand-logo128.png" type="image/png">
 </head>
@@ -12,19 +13,86 @@
     <div class="site">
         <div class="main">
             <div class="page">
+                <link rel="stylesheet" href="./css/carrousel-product.css">
+                <link rel="stylesheet" href="./css/cards-product.css">
+                <link rel="stylesheet" href="./css/vendor-products.css">
                 <h1 id="current-site">$SITETITLE$</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sunt optio molestiae architecto
-                    non
-                    iure alias, labore perspiciatis expedita ut, veniam minima excepturi! Laboriosam ab autem cumque
-                    aperiam
-                    illum atque?</p>
-                <p class="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sunt optio molestiae
-                    architecto non iure alias, labore perspiciatis expedita ut, veniam minima excepturi! Laboriosam ab
-                    autem
-                    cumque aperiam illum atque?</p>
+                <div class="info-panel">
+                    <div class="ip-head">
+                        <div class="ip-title">Añadir nuevo producto</div>
+                    </div>
+                    <div class="ip-body">
+                        <form class="product-form" id="add-product-form">
+                            <label for="product-name">Nombre del Producto</label>
+                            <input type="text" id="product-name" placeholder="Nombre del Producto" required>
+
+                            <label for="product-price">Precio</label>
+                            <input type="number" id="product-price" placeholder="Precio" required>
+
+                            <label for="product-stock">Stock</label>
+                            <select id="product-stock">
+                                <option value="Disponible">Disponible</option>
+                                <option value="Agotado">Agotado</option>
+                            </select>
+
+                            <label for="product-image">Imagen del Producto</label>
+                            <label for="product-image" id="product-image-label">Subir aquí</label>
+                            <input type="file" id="product-image" accept="image/*">
+
+                            <label for="product-description">Descripción</label>
+                            <textarea id="product-description" rows="4"
+                                placeholder="Descripción del Producto"></textarea>
+
+                            <button type="submit" class="btn-form-action">Añadir el Producto</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="info-panel">
+                    <div class="ip-head">
+                        <div class="ip-title">Editar Producto</div>
+                    </div>
+                    <div class="ip-body">
+                        <div class="search-container">
+                            <input type="text" placeholder="Busca tu Artículo" class="search-input">
+                            <i class="fa-solid fa-search search-icon"></i>
+                        </div>
+
+                        <div class="carousel-container">
+                            <button class="carousel-btn prev-btn"><i class="fa-solid fa-angle-left"></i></button>
+                            <div class="product-carousel"></div>
+                            <button class="carousel-btn next-btn"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>
+
+                        <form class="product-form" id="edit-product-form">
+                            <label for="edit-product-name">Nombre del Producto</label>
+                            <input type="text" id="edit-product-name" placeholder="Nombre del Producto" required>
+
+                            <label for="product-price">Precio</label>
+                            <input type="number" id="product-price" placeholder="Precio" required>
+
+                            <label for="edit-product-stock">Stock</label>
+                            <select id="edit-product-stock">
+                                <option value="Disponible">Disponible</option>
+                                <option value="Agotado">Agotado</option>
+                            </select>
+
+                            <label for="edit-product-image">Imagen del Producto</label>
+                            <label for="product-image" id="product-image-label">Subir aquí</label>
+                            <input type="file" id="product-image" accept="image/*">
+
+
+                            <label for="edit-product-description">Descripción</label>
+                            <textarea id="edit-product-description" rows="4"
+                                placeholder="Descripción del Producto"></textarea>
+
+                            <button type="submit" class="btn-form-action">Editar Producto</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="js">
+            <script type="module" src="./js/productCarousel.js"></script>
             <script type="module" src="./js/main.js"></script>
         </div>
     </div>

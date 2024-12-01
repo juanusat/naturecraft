@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comunicaciones</title>
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/communications.css">
     <link rel="shortcut icon" href="./media/brand/brand-logo128.png" type="image/png">
 </head>
 
@@ -14,10 +13,12 @@
     <div class="site">
         <div class="main">
             <div class="page">
-                <h1 class="page-title">Comunicaciones</h1>
-
-                <div class="communications-container">
-                        <div class="sidebar">
+                <link rel="stylesheet" href="./css/carrousel-product.css">
+                <link rel="stylesheet" href="./css/cards-product.css">
+                <link rel="stylesheet" href="./css/vendor-messenger.css">
+                <h1 id="current-site">$SITETITLE$</h1>
+                <div class="communications-container cont-fields">
+                    <div class="chat-sidebar">
                         <h2>Mensajes</h2>
                         <div class="search-bar">
                             <input type="text" placeholder="Buscar">
@@ -47,90 +48,80 @@
                             <div class="message user-message">Hola, necesito ayuda con mi pedido.</div>
                             <div class="message support-message">¡Claro! ¿En qué puedo ayudarte?</div>
                             <div class="message user-message">Quiero cambiar la dirección de entrega.</div>
-                            <div class="message user-message">Ahora ya no vivo en jlo, evolucione a la victoria. 😏</div>
+                            <div class="message user-message">Ahora ya no vivo en jlo, evolucione a la victoria. 😏
+                            </div>
                             <div class="message support-message">Por supuesto, te guiaré en el proceso.</div>
                             <div class="message user-message">Perfecto! Estare atento a tus indicaciones.</div>
-                            <div class="chat-input">
-                                <input type="text" placeholder="Escribe tu mensaje">
-                                <button class="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
-                            </div>
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" placeholder="Escribe tu mensaje">
+                            <button class="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
                         </div>
                     </div>
-                    
-                    </div>
-
-                <div class="refunds-container">
-                    <div class="refunds-header">
-                        <h2>Gestión de devoluciones y reembolsos</h2>
-                        <div class="search-bar">
-                            <input type="text" placeholder="Buscar Orden">
-                            <i class="fa-solid fa-search"></i>
-                        </div>
-                    </div>
-                    <ul class="refunds-list">
-                        <li class="refund-item">
-                            <span>Orden 1</span>
-                            <button class="refund-btn">
-                                <i class="fa-solid fa-xmark"></i>
-                            </button>
-                        </li>
-                        <li class="refund-item">
-                            <span>Orden 2</span>
-                            <button class="refund-btn">
-                                <i class="fa-solid fa-xmark"></i>
-                            </button>
-                        </li>
-                        <li class="refund-item">
-                            <span>Orden 3</span>
-                            <button class="refund-btn">
-                                <i class="fa-solid fa-xmark"></i>
-                            </button>
-                        </li>
-                    </ul>
                 </div>
-
-                    <div class="refunds-container">
-                        <div class="refunds-header">
-                            <h2>Gestión de devoluciones y reembolsos</h2>
+                <div class="info-panel">
+                    <div class="ip-head">
+                        <div class="ip-title">Gestión de devoluciones y reembolsos</div>
+                    </div>
+                    <div class="ip-body cont-fields">
+                        <div class="refund-search-bar">
+                            <input type="text" placeholder="Buscar orden" class="refund-search-input">
+                            <i class="fa-solid fa-search refund-search-icon"></i>
                         </div>
-                    <div class="refund-container">
-                        <!-- Buscador -->
+                        <ul class="refunds-list">
+                            <li class="refund-item">
+                                <span>Orden 1</span>
+                                <button class="refund-btn">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </li>
+                            <li class="refund-item">
+                                <span>Orden 2</span>
+                                <button class="refund-btn">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </li>
+                            <li class="refund-item">
+                                <span>Orden 3</span>
+                                <button class="refund-btn">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info-panel">
+                    <div class="ip-head">
+                        <div class="ip-title">Informacion para la devolucion de orden</div>
+                    </div>
+                    <div class="ip-body cont-fields">
                         <div class="refund-search-bar">
                             <input type="text" placeholder="Ingrese Orden" class="refund-search-input">
                             <i class="fa-solid fa-search refund-search-icon"></i>
                         </div>
-                
-                        <!-- Texto y carrusel -->
+
                         <h3 class="refund-products-title">Productos de la Orden</h3>
-                        <div class="refund-carousel-container">
-                            <button class="refund-carousel-btn prev-btn">❮</button>
-                            <div class="refund-product-carousel">
-                                <img src="./media/products/01_botella_bambu1.webp" alt="Producto 1">
-                                <img src="./media/products/07_juguetes_madera.webp" alt="Producto 2">
-                                <img src="./media/products/27_difusores_naturales.webp" alt="Producto 3">
-                            </div>
-                            <button class="refund-carousel-btn next-btn">❯</button>
+                        <div class="carousel-container">
+                            <button class="carousel-btn prev-btn"><i class="fa-solid fa-angle-left"></i></button>
+                            <div class="product-carousel"></div>
+                            <button class="carousel-btn next-btn"><i class="fa-solid fa-angle-right"></i></button>
                         </div>
-                
-                        <!-- Formulario -->
                         <form class="refund-form">
                             <label for="refund-description">Descripción del problema</label>
-                            <textarea id="refund-description" rows="4" placeholder="Describa el problema aquí"></textarea>
-                
+                            <textarea id="refund-description" rows="4"
+                                placeholder="Describa el problema aquí"></textarea>
+
                             <label for="refund-evidence">Imagen de evidencia</label>
                             <label for="refund-evidence" id="refund-evidence-label">Subir aquí</label>
                             <input type="file" id="refund-evidence" accept="image/*">
-                
+
                             <button type="submit" class="refund-submit-btn">Enviar para Reembolso</button>
                         </form>
                     </div>
-                 
-
-            </div>
+                </div>
+            <script src="js/productCarousel.js"></script>
+            <script type="module" src="./js/main.js"></script>
         </div>
-        <script src="js/productCarousel.js"></script>
-        <script type="module" src="./js/main.js"></script>
-    </div>
 </body>
 
 </html>

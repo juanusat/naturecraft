@@ -57,15 +57,4 @@ export const cardProduct = (product, showBtnAddCart = false) => {
         `
     }
     return productItem
-
-    
 };
-
-const products = [
-    { id_product: 1, photos: ['01_botella_bambu1.webp'], title: 'Botella de Bambú', price: '15.00' },
-    { id_product: 2, photos: ['02_boli_ecologico.webp'], title: 'Bolígrafo Ecológico', price: '5.00' },
-    { id_product: 3, photos: ['03_cuaderno.webp'], title: 'Cuaderno Reciclado', price: '8.00' },
-    { id_product: 4, photos: ['04_caja.webp'], title: 'Caja Decorativa', price: '20.00' },
-    { id_product: 5, photos: ['05_organizador.webp'], title: 'Organizador', price: '12.00' },
-    // Agrega más productos aquí
-];

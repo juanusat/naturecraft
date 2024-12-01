@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soporte</title>
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/support.css">
     <link rel="shortcut icon" href="./media/brand/brand-logo128.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
     <div class="site">
         <div class="main">
             <div class="page">
-                <h1 class="page-title">Soporte</h1>
+                <link rel="stylesheet" href="./css/support.css">
+                <h1 id="current-site">$SITETITLE$</h1>
 
                 <section class="support-header">
                     <div class="support-search">
@@ -31,7 +30,7 @@
                 </section>
 
                 <section class="faq-section">
-                    <h3 class="faq-title">Preguntas Frecuentes</h3>
+                    <h3 class="faq-title">Preguntas frecuentes</h3>
 
                     <div class="faq-item">
                         <h4 class="faq-question">¿Cómo puedo restablecer mi contraseña?</h4>
@@ -57,21 +56,22 @@
 
                 <section class="live-chat-section">
                     <div class="chat-header">
-                        <button class="live-chat-btn">Soporte En Vivo</button>
+                        <div class="live-chat-btn">Soporte en vivo</div>
                         <h3>Mensajes</h3>
                     </div>
-
-                    <div class="chat-messages">
-                        <div class="message user-message">Hola, necesito ayuda con mi pedido.</div>
-                        <div class="message support-message">¡Claro! ¿En qué puedo ayudarte?</div>
-                        <div class="message user-message">Quiero cambiar la dirección de entrega.</div>
-                        <div class="message support-message">Por supuesto, te guiaré en el proceso.</div>
+                    <div class="chat-body">
+                        <div class="chat-messages">
+                            <div class="message user-message">Hola, necesito ayuda con mi pedido.</div>
+                            <div class="message support-message">¡Claro! ¿En qué puedo ayudarte?</div>
+                            <div class="message user-message">Quiero cambiar la dirección de entrega.</div>
+                            <div class="message support-message">Por supuesto, te guiaré en el proceso.</div>
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" placeholder="Escribe tu mensaje">
+                            <button class="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
                     </div>
 
-                    <div class="chat-input">
-                        <input type="text" placeholder="Escribe tu mensaje">
-                        <button class="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
-                    </div>
                 </section>
             </div>
         </div>
