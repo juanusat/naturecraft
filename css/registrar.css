@@ -1,0 +1,104 @@
+.container-form {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 18px;
+    border-color: var(--naranja1);
+    background-color: var(--naranja2);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 600px;
+}
+.group-form.inputs {
+    margin: 10px  auto 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.title-inputs {
+    margin-block-end: 16px;
+    text-align: center;
+    padding-top: 20px;
+}
+.group-form:not(.fwidth) {
+    width: 100%;
+    max-width: 440px;
+}
+.group-form.fwidth {
+    min-height: 20px;
+
+}
+.group-form label {
+    width: 100%;
+}
+.group-form .ipt-text {
+    border: 1px solid var(--naranja1-d);
+    background-color: #FFC68C;
+    font-size: 16px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    width: 100%;
+    
+}
+
+.group-form .btn-enviar {
+    background-color: var(--naranja1);
+    transition: all 0.3s;
+    color: var(--color-t-1);
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 16px;
+}
+.group-form .btn-enviar:hover {
+    background-color: var(--naranja1-d);
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f79229; /* Color del borde del checkbox */
+    appearance: none; /* Eliminar el estilo predeterminado */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #f79229; /* Color de fondo cuando está marcado */
+    border: 2px solid #f79229;
+}
+
+label {
+    font-size: 16px;
+    margin-left: 5px;
+    margin-top: 1.3px;
+}
+.check{
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+#terminos{
+    border-radius: 5px;
+}
+.group-form a{
+    margin: 5px auto;
+    padding-bottom: 5px;
+}
+.separator {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.separator hr {
+    flex-grow: 1;
+    border: none;
+    height: 1px;
+    background-color: #000;
+}
+.separator span {
+    margin: 0 10px;
+    font-weight: bold;
+    color: #555;
+}

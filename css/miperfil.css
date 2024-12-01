@@ -1,0 +1,117 @@
+.container-form {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 18px;
+    border-color: var(--naranja1);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+}
+.group-form.inputs {
+    margin-left:5% ;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.group-form:not(.fwidth) {
+    width: 100%;
+    max-width: 610px;
+}
+.group-form.fwidth {
+    min-height: 20px;
+}
+.group-form label {
+    width: 260px;
+    margin: auto 0px;
+}
+.group-form .ipt-text {
+    border: 1px solid var(--naranja1);
+    background-color: var(--naranja2);
+    font-size: 16px;
+    padding: 10px 18px;
+    border-radius: 18px;
+    width: 350px;
+}
+.group-form .ipt-text::placeholder {
+    color: var(--color-t-0);
+}
+.group-form .btn-enviar {
+    background-color: var(--naranja1);
+    transition: all 0.3s;
+    color: var(--color-t-1);
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 16px;
+    width: 350px;
+    margin: 0px 0px 0px auto;
+}
+
+.group-form .btn-enviar:hover {
+    background-color: var(--naranja1-d);
+}
+
+.form-field{
+    display: flex;
+}
+.ip-title{
+    margin-left:5% ;
+}
+
+/* Estilo para el contenedor del select y el icono */
+.select-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilo para el select */
+.select-wrapper select {
+    appearance: none; /* Elimina el icono predeterminado */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px 40px 10px 10px; /* Espacio para el icono */
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Estilo para el icono */
+.select-wrapper i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    pointer-events: none; /* Hace que el icono no interfiera con la selección */
+    color: #666;
+}
+.group-form .ipt-cont {
+    border: 1px solid var(--naranja1);
+    background-color: var(--naranja2);
+    font-size: 16px;
+    padding: 10px 18px;
+    border-radius: 18px;
+    width: 610px;
+}
+.group-form .ipt-cont::placeholder {
+    color: var(--color-t-0);
+}
+.group-form .btn-enviar-cont {
+    background-color: var(--naranja1);
+    transition: all 0.3s;
+    color: var(--color-t-1);
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 16px;
+    width: 610px;
+    margin: 0px 0px 0px auto;
+}
+
+.group-form .btn-enviar-cont:hover {
+    background-color: var(--naranja1-d);
+}

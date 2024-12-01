@@ -1,0 +1,93 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenes y envios</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./media/brand/brand-logo128.png" type="image/png">
+    <link rel="stylesheet" href="./css/ordenesEnvios.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="site">
+        <div class="main">
+            <div class="page">
+
+                <h1 id="current-site">$SITETITLE$</h1>
+                <div class="info-panel">
+                    <div class="ip-head">
+                        <div class="ip-title">Historial de Ordenes</div>
+                    </div>
+                    <div class="ip-body">
+                        <div class="cont-orden">
+                            <div class="ordenes">
+                                <button class="boton-orden">Orden 1</button>
+                                <button class="boton-orden">Orden 2</button>
+                                <button class="boton-orden">Orden 3</button>
+                                <button class="boton-orden">Orden 4</button>
+                              </div>
+                            
+                              <div class="search-container">
+                                <!-- Formulario con el input y el ícono -->
+                                <form action="/buscar" method="get">
+                                    <input type="search" id="searchInput" name="q" placeholder="Buscar Orden">
+                                    <!-- Ícono de búsqueda a la derecha -->
+                                    <span class="search-icon"><i class="fas fa-search"></i></span>
+                                </form>
+                            </div>
+                              
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="info-panel">
+                    <div class="ip-head">
+                        <div class="ip-title">Informacion de orden</div>
+                    </div>
+                    <div class="ip-body">
+                        <div class="cont-info">
+                            <div class="izq-c">
+                                <p>N° de Orden:</p>
+                                <p>Estado:</p>
+                                <p>Articulos:</p>
+                                <p>Empresa de envio:</p>
+                                <p>Fecha de compra:</p>
+                            </div>
+                            <div class="der-c">
+                                <p>1000</p>
+                                <p>Enviado</p>
+                                <ul>
+                                    <li>Collar de aire (cant 1)</li>
+                                    <li>Collar de aire (cant 1)</li>
+                                    <li>Collar de aire (cant 1)</li>
+                                </ul>
+                                <p>Vuelito S.A</p>
+                                <p>8/10/2024</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="info-panel">
+                    <div class="ip-head">
+                        <div class="ip-title">Confirmacion de Entrega</div>
+                        <!-- FALTA ESTA PARTE DE DIAGRAMA DE VISTA PARA LA ENTREGA-->
+                    </div>
+                    <div class="ip-body">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="js">
+            <script src="./js/chart.js"></script>
+            <script type="module" src="./js/main.js"></script>
+            <script src="./js/vendor-resume.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/miperfil.css">
+    <link rel="shortcut icon" href="./media/brand/brand-logo128.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="site">
+        <div class="main">
+            <div class="page">
+                <h1 id="current-site">$SITETITLE$</h1>
+                <div class="info-panel">
+                    <div class="ip-head">
+                        <div class="ip-title">Sobre ti</div>
+                    </div>
+                    <div class="ip-body">
+                        <div class="group-form inputs">
+                            <div class="form-field">
+                                <label for="">Nombre</label>
+                                <label><input type="text" class="ipt-text"></label>
+                            </div>
+                            <div class="form-field">
+                                <label for="">Se unio a NatureCraft en:</label>
+                                <label><input type="text" class="ipt-text"></label>
+                            </div>
+                            <button class="btn-enviar">Editar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-panel">
+                    <div class="ip-head">
+                        <div class="ip-title">Ajustes de ubicación</div>
+                    </div>
+                    <div class="ip-body">
+                        <div class="group-form inputs">
+                            <p>Indica donde vives, qué idioma hablas y la divisa que usas.</p>
+                            <div class="form-field">
+                                <label for="pais">País:</label>
+                                <div class="select-wrapper">
+                                    <select id="pais" name="pais" required class="ipt-text">
+                                        <option value="peru">Perú</option>
+                                        <option value="mexico">México</option>
+                                        <option value="argentina">Argentina</option>
+                                        <option value="chile">Chile</option>
+                                    </select>
+                                    <i class="fa-solid fa-caret-down"></i> <!-- Icono personalizado -->
+                                </div>
+                            </div>
+
+                            <!-- Selección de idioma -->
+                            <div class="form-field">
+                                <label for="idioma">Idioma:</label>
+                                <div class="select-wrapper">
+                                    <select id="idioma" name="idioma" required class="ipt-text">
+                                        <option value="espanol">Español</option>
+                                        <option value="ingles">Inglés</option>
+                                        <option value="portugues">Portugués</option>
+                                    </select>
+                                    <i class="fa-solid fa-caret-down"></i> <!-- Icono personalizado -->
+                                </div>
+                            </div>
+
+                            <!-- Selección de divisa -->
+                            <div class="form-field">
+                                <label for="divisa">Divisa:</label>
+                                <div class="select-wrapper">
+                                    <select id="divisa" name="divisa" required class="ipt-text">
+                                        <option value="sol">S/ (Sol)</option>
+                                        <option value="usd">$ (Dólar)</option>
+                                        <option value="euro">€ (Euro)</option>
+                                    </select>
+                                    <i class="fa-solid fa-caret-down"></i> <!-- Icono personalizado -->
+                                </div>
+                            </div>
+                            <button class="btn-enviar">Editar</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="info-panel">
+                    <div class="ip-head">
+                        <div class="ip-title">Sobre ti</div>
+                    </div>
+                    <div class="ip-body">
+                        <div class="group-form inputs">
+
+                            <label for="">Contraseña Actual:</label>
+                            <label><input type="text" class="ipt-cont"></label>
+                            <label for="">Nueva Contraseña:</label>
+                            <label><input type="text" class="ipt-cont"></label>
+                            <label for="">Confirmar Nueva Contraseña:</label>
+                            <label><input type="text" class="ipt-cont"></label>
+                            <button class="btn-enviar-cont">Editar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div class="js">
+        <script src="./js/chart.js"></script>
+        <script type="module" src="./js/main.js"></script>
+        <script src="./js/vendor-resume.js"></script>
+    </div>
+    </div>
+
+</body>
+
+</html>
