@@ -19,17 +19,23 @@
 
 .favorites-search {
     position: relative;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
+    margin-block: 4px 20px;
 }
 
 .favorites-search input {
     width: 100%;
     padding: 10px 40px 10px 15px;
-    border: 1px solid #cccccc;
+    border: 1px solid var(--naranja1);
     border-radius: 20px;
     font-size: 16px;
+    transition: all 0.3s;
 }
-
+.favorites-search input:focus {
+    border-color: var(--naranja1-d);
+    padding-inline-start: 24px;
+}
 .favorites-search .search-icon {
     position: absolute;
     top: 50%;
