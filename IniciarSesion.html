@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesion</title>
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/iniciarsesion.css">
     <link rel="shortcut icon" href="./media/brand/brand-logo128.png" type="image/png">
 </head>
 
@@ -13,18 +12,28 @@
     <div class="site">
         <div class="main">
             <div class="page">
+                <script>
+                    var site_location="login"
+                </script>
+                <link rel="stylesheet" href="./css/login.css">
                 <div class="container-form">
                     <div class="group-form inputs">
-                        <p class="title-inputs">Iniciar Sesion</p>
-                        <label for="">Direccion de correo electronico</label>
-                        <label><input type="text" class="ipt-text"></label>
-                        <label for="">Contraseña</label>
-                        <label><input type="text" class="ipt-text"></label>
-                        <div class="check">
-                            <input type="checkbox" id="terminos">
-                            <!-- FALTA PONER EL CHECK EN EL LABLEL-->
-                        <label for="terminos">Mantener la sesion iniciada</label>
-                        </div>
+                        <p class="title-inputs title-form">Iniciar Sesion</p>
+                        <label>
+                            <p class="label-text">Direccion de correo electronico</p>
+                            <input type="text" class="ipt-text">
+                        </label>
+                        <label>
+                            <p class="label-text">Contraseña</p>
+                            <input type="text" class="ipt-text">
+                        </label>
+                        <label class="check">
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="terminos">
+                                <span></span>
+                            </div>
+                            <p class="label-checkbox">Mantener la sesion iniciada</p>
+                        </label>
                         <a href="">¿Has olvidado tu contraseña?</a>
                         <button class="btn-enviar">Entrar</button>
                         <div class="separator">
