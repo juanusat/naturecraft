@@ -6,14 +6,13 @@
     <title>Ordenes y envios</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="shortcut icon" href="./media/brand/brand-logo128.png" type="image/png">
-    <link rel="stylesheet" href="./css/vendor-sales.css">
 </head>
 
 <body>
     <div class="site">
         <div class="main">
             <div class="page">
-
+                <link rel="stylesheet" href="./css/vendor-sales.css">
                 <h1 id="current-site">$SITETITLE$</h1>
                 <div class="info-panel">
                     <div class="ip-head">
@@ -29,10 +28,8 @@
                               </div>
                             
                               <div class="search-container">
-                                <!-- Formulario con el input y el ícono -->
                                 <form action="/buscar" method="get">
                                     <input type="search" id="searchInput" name="q" placeholder="Buscar Orden">
-                                    <!-- Ícono de búsqueda a la derecha -->
                                     <span class="search-icon"><i class="fas fa-search"></i></span>
                                 </form>
                             </div>
@@ -72,10 +69,41 @@
                 <div class="info-panel">
                     <div class="ip-head">
                         <div class="ip-title">Confirmacion de Entrega</div>
-                        <!-- FALTA ESTA PARTE DE DIAGRAMA DE VISTA PARA LA ENTREGA-->
+                        <div class="ip-tright">
+                            <button class="btn-light">Confirmar recepción</button>
+                        </div>
                     </div>
                     <div class="ip-body">
-
+                        <div class="diagram-state-reception">
+                            <div class="state-col check">
+                                <div class="state-circle"></div>
+                                <div class="state-line-cont">
+                                    <div class="state-line-v"></div>
+                                </div>
+                                <div class="state-text">Enviado por proveedor</div>
+                            </div>
+                            <div class="state-col check">
+                                <div class="state-circle"></div>
+                                <div class="state-line-cont">
+                                    <div class="state-line-v"></div>
+                                </div>
+                                <div class="state-text">Recibido en almacén</div>
+                            </div>
+                            <div class="state-col check last-check">
+                                <div class="state-circle"></div>
+                                <div class="state-line-cont">
+                                    <div class="state-line-v"></div>
+                                </div>
+                                <div class="state-text">Enviando</div>
+                            </div>
+                            <div class="state-col">
+                                <div class="state-circle"></div>
+                                <div class="state-line-cont">
+                                    <div class="state-line-v"></div>
+                                </div>
+                                <div class="state-text">Recibido</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 

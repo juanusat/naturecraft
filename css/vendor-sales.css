@@ -1,29 +1,33 @@
-.ip-title{
-    margin-left:5% ;
-}
 .cont-orden {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 2.5fr 1.5fr; /* Divide el espacio en dos columnas */
     grid-gap: 20px;
-    padding: 20px;
-  }
-
-  /* Contenedor de las órdenes */
-  .ordenes {
-    padding: 0px 23px;
+}
+@media (min-width: 601px) {
+    .cont-orden {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: "list-b list-b search-b";
+    }
+}
+@media (max-width: 600px) {
+    .cont-orden {
+        grid-auto-flow: row;
+        grid-template-areas:
+        "search-b"
+        "list-b";
+    }
+}
+.ordenes {
     border-radius: 8px;
-    margin-right: 50px;
-  }
+    grid-area: list-b;
+}
 
-
-  /* Estilos para los botones de las órdenes */
-  .ordenes .boton-orden {
+.ordenes .boton-orden {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-color: var(--naranja2); /* Color de fondo azul */
+    background-color: var(--naranja2);
     border: none;
     padding: 12px 20px;
     width: 100%;
@@ -32,46 +36,111 @@
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
-  }
-
-
-  /* Efecto de hover en los botones */
-  .ordenes .boton-orden:hover {
-    background-color: var(--naranja1); /* Un tono más oscuro de azul al pasar el mouse */
-  }
-
-  .search-container {
-    position: relative;
-    display: inline-block;
 }
 
+.ordenes .boton-orden:hover {
+    background-color: var(--naranja1);
+}
+.search-container {
+    position: relative;
+    grid-area: search-b;
+}
 #searchInput {
     padding: 8px;
     width: 100%;
-    padding-right: 30px; /* espacio para el ícono */
+    padding-right: 30px;
     border: 2px solid var(--naranja2);
     border-radius: 4px;
+    transition: all 0.3s;
 }
-
+#searchInput:focus {
+    box-shadow: 0 0 8px var(--naranja1);
+    outline: none;
+    border-color: var(--naranja1);
+}
 .search-icon {
     position: absolute;
     right: 10px;
-    top: 5%;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 16px;
     color: var(--naranja1);
 }
-.info-orden{
-  display: flex;
-  margin-left:5% ;
+.info-orden {
+    display: flex;
+    margin-left: 5%;
 }
-.title-orde{
-  padding-right: 500px;
+.title-orde {
+    padding-right: 500px;
 }
 .cont-info {
-  display: grid;
-  grid-template-columns: 1fr 3fr; /* Divide el espacio en dos columnas */
-  margin-left:5% ;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-left: 5%;
 }
-.cont-info p{
-  padding-bottom: 40px;
+.cont-info p {
+    padding-bottom: 40px;
+}
+.diagram-state-reception {
+    display: flex;
+    flex-wrap: nowrap;    
+}
+.diagram-state-reception .state-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.diagram-state-reception .state-col .state-circle {
+    background-color: var(--naranja2);
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    margin-block-end: 6px;
+}
+.diagram-state-reception .state-col.check .state-circle {
+    background-color: var(--naranja1);
+}
+.diagram-state-reception .state-col .state-line-cont {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.diagram-state-reception .state-col .state-line-v {
+    width: 2px;
+    background-color: #a1a1a1;
+    height: 40px;
+}
+.diagram-state-reception .state-col .state-line-cont::before,
+.diagram-state-reception .state-col .state-line-cont::after {
+    content: "";
+    height: 2px;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000000;
+}
+.diagram-state-reception .state-col.check .state-line-cont::before,
+.diagram-state-reception .state-col.check:not(.last-check) .state-line-cont::after {
+    border-style: solid;
+    border-color: var(--naranja1);
+    background-color: var(--naranja1);
+    border-width: 2px 0px;
+}
+.diagram-state-reception .state-col .state-line-cont::before {
+    left: 0px;   
+}
+.diagram-state-reception .state-col .state-line-cont::after {
+    right: 0px;
+}
+.diagram-state-reception .state-col:first-child .state-line-cont::before {
+    display: none;
+}
+.diagram-state-reception .state-col:last-child .state-line-cont::after {
+    display: none;
+}
+.diagram-state-reception .state-col .state-text {
+    margin-block-start: 8px;
 }

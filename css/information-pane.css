@@ -12,14 +12,17 @@
     margin-block-end: 28px;
 }
 .info-panel .ip-head {
+    display: flex;
     width: 100%;
     background-color: var(--naranja1);
     color: var(--color-t-1);
     padding-inline: 22px;
     font-size: 15px;
+    align-items: center;
 }
 .info-panel .ip-head .ip-title {
     padding-block: 16px;
+    flex: 1;
 }
 .info-panel .ip-body {
     width: 100%;
