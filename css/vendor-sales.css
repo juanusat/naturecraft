@@ -46,7 +46,7 @@
     grid-area: search-b;
 }
 #searchInput {
-    padding: 8px;
+    padding: 8px 12px;
     width: 100%;
     padding-right: 30px;
     border: 2px solid var(--naranja2);
