@@ -17,12 +17,12 @@
     margin-bottom: 15px;
 }
 
-.search-bar {
+.message-search-bar {
     position: relative;
     margin-bottom: 12px;
 }
 
-.search-bar input {
+.message-search-bar input {
     width: 100%;
     padding: 10px 15px 10px 40px;
     border: 1px solid var(--naranja1);
@@ -30,7 +30,7 @@
     font-size: 14px;
 }
 
-.search-bar i {
+.message-search-bar i {
     position: absolute;
     top: 50%;
     left: 15px;
