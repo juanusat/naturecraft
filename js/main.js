@@ -1,5 +1,3 @@
-import bd_options from './../data-presets/data-options-config.js';
-import bd_data from './../data-presets/data1.js';
 import { $ } from './../components/utils.js';
 import { createHeader } from './../components/header.js';
 import { createFooter } from './../components/footer.js';

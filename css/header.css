@@ -29,6 +29,7 @@
 
 .header-top-box .header-logo {
     max-height: calc(var(--header-h1-max)* 0.9);
+    height: 100%;
 }
 
 .header-top-box .header-logo img {

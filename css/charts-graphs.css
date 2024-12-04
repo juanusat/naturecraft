@@ -1,0 +1,32 @@
+canvas.chart-graph {
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    margin-inline: auto;
+}
+.legend-box {
+    margin-top: 40px;
+    margin-inline: auto;
+    width: 100%;
+    max-width: 680px;
+}
+.legend-box,
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.legend {
+    gap: 8px 32px;
+}
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.color-box {
+    width: 22px;
+    height: 14px;
+    border-radius: 6px;
+}
