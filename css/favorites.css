@@ -1,3 +1,24 @@
+.grid-products.empty {
+    display: block;
+    margin-block-start: 80px;
+    margin-block-end: 100px;
+}
+.grid-products.empty p {
+    text-align: center;
+}
+.grid-products.empty a {
+    color: var(--naranja1)
+}
+.grid-products.empty a:hover {
+    color: var(--naranja1-d);
+    text-decoration: underline;
+}
+.grid-products.empty .empty-favorites-sup {
+    font-weight: bold;
+    color: var(--naranja1);
+    font-size: 20px;
+    margin-block-end: 18px;
+}
 .title-group-text {
     margin-inline-end: 8px;
 }

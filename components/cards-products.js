@@ -15,6 +15,12 @@ export const cardCircle = (product) => {
 };
 export const cardProduct = (product, showBtnAddCart = false) => {
     let productSrc  = './media/products/' + (product.photos[0] || 'box-empty.png')
+    const ratingStars = Math.round(product.rating);
+    const starsHTML = Array.from({ length: 5 }, (_, index) => {
+        return index < ratingStars
+            ? '<i class="fa-solid fa-star"></i>'
+            : '<i class="fa-regular fa-star"></i>';
+    }).join('');
     const productItem = createElement('a', {
         href: 'product.html?item=' + product.id_product,
         className: 'card-product-item-reg',
@@ -30,13 +36,7 @@ export const cardProduct = (product, showBtnAddCart = false) => {
             </picture>
         </div>
         <div class="details">
-            <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            </div>
+            <div class="rating">${starsHTML}</div>
             <div class="product-name">${product.title}</div>
             <div class="price">USD ${product.price}</div>
         </div>

@@ -7,7 +7,7 @@
 
 .chat-sidebar {
     background-color: var(--naranja2);
-    padding: 20px;
+    padding: 20px 14px;
     border-radius: 10px 0px 0px 10px;
     border: 2px solid var(--naranja1);
 }
@@ -57,10 +57,12 @@
 }
 
 .contact-item:hover {
-    background-color: var(--naranja2);
+    background-color: #ffffff9e;
 }
 
 .contact-avatar {
+    background-image: url('./../media/others/fiestas-02.webp');
+    background-size: 100% 100%;
     width: 40px;
     height: 40px;
     background-color: white;
@@ -267,7 +269,9 @@
     border: 1px solid var(--naranja2);
     border-radius: 10px;
 }
-
+.refund-search-order {
+    position: relative;
+}
 .refund-search-icon {
     position: absolute;
     top: 50%;
@@ -276,7 +280,6 @@
     color: var(--naranja1);
     pointer-events: none;
 }
-
 
 .refund-container {
     display: flex;

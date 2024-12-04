@@ -83,7 +83,7 @@
 }
 .diagram-state-reception {
     display: flex;
-    flex-wrap: nowrap;    
+    flex-wrap: nowrap;
 }
 .diagram-state-reception .state-col {
     flex: 1;
@@ -130,7 +130,7 @@
     border-width: 2px 0px;
 }
 .diagram-state-reception .state-col .state-line-cont::before {
-    left: 0px;   
+    left: 0px;
 }
 .diagram-state-reception .state-col .state-line-cont::after {
     right: 0px;

@@ -39,4 +39,4 @@ let z = 56
 while (z--) {
     cardProduct.parentNode.appendChild(cardProduct.cloneNode(true))
 }
-    */
+*/

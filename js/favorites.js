@@ -1,13 +1,36 @@
+import bd_data from '../data-presets/data1.js';
 import { $ } from '../components/utils.js';
-(function() {
-    let cardProduct = $('.card-product-item-reg')
-    let z = 11
-    while (z--) {
-        cardProduct.parentNode.appendChild(cardProduct.cloneNode(true))
+import { cardProduct } from '../components/cards-products.js';
+
+function printSimilarFavorites(limit) {
+    const sortedProducts = bd_data.products.sort(() => Math.random() - 0.5);
+    const limitedProducts = sortedProducts.slice(0, limit);
+    limitedProducts.forEach(product => {
+        const productCard = cardProduct(product);
+        $('#similarFavorites .grid-products').append(productCard);
+    });
+}
+function printFavorites() {
+    const favorites = JSON.parse(localStorage.getItem('dataSite_account'))?.favorites || [];
+    const favoritesContainer = $('#favorites .grid-products');
+
+    if (favorites.length === 0) {
+        $('.favorites-header').style.display = 'none'
+        favoritesContainer.classList.add('empty')
+        favoritesContainer.innerHTML = /*html*/ `
+            <p class="empty-favorites-sup">No tiene productos agregados a favoritos.</p>
+            <p class="empty-favorites-inf">Vaya a <a href="./../">inicio</a>, le garantizamos encontrar productos interesantes</p>
+        `;
+    } else {
+        favorites.forEach(favoriteId => {
+            const product = bd_data.products.find(product => product.product_id === favoriteId);
+            if (product) {
+                const productCard = cardProduct(product);
+                favoritesContainer.append(productCard);
+            }
+        });
     }
-    let cardProductSuggest = $('#similarFavorites .card-product-item-reg')
-    z = 7
-    while (z--) {
-        cardProductSuggest.parentNode.appendChild(cardProductSuggest.cloneNode(true))
-    }
-})()
+}
+
+printSimilarFavorites(12);
+printFavorites();

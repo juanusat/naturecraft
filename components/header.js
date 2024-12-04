@@ -83,7 +83,7 @@ export const createHeader = () => {
                     <a class="color-t-n2" href="miperfil.html">
                         <i class="fa-solid fa-user"></i><span>Mi perfil</span>
                     </a>
-                    <a class="color-t-n2" href="favoritos.html">
+                    <a class="color-t-n2" href="favorites.html">
                         <i class="fa-solid fa-heart"></i><span>Favoritos</span>
                     </a>
                     <a class="color-t-n2" href="carrito.html">
@@ -145,7 +145,7 @@ export const createHeader = () => {
                             new RegExp(`(${query})`, 'gi'),
                             '<strong>$1</strong>'
                         )
-    
+
                         let item_result = createElement('div',
                             {
                                 className: 'search-result litem',
