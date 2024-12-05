@@ -3,40 +3,37 @@ function loadCart() {
     const cartItemsContainer = document.querySelector('.cart-items');
     const summaryContainer = document.querySelector('.summary');
 
-    // Limpiar el contenedor del carrito antes de añadir los productos
+    // Limpia los contenedores antes de llenarlos
     cartItemsContainer.innerHTML = '';
+    summaryContainer.innerHTML = '';
 
     if (cart.length === 0) {
-        cartItemsContainer.innerHTML = '<p>Tu carrito está vacío.</p>';
-        summaryContainer.innerHTML = '<p>No hay productos en el carrito para mostrar el resumen.</p>';
+        cartItemsContainer.innerHTML = `
+            <p>Tu carrito está vacío. <a href="./index.html" class="link">¡Agrega productos!</a></p>`;
         return;
     }
 
-    // Mostrar los productos del carrito
     cart.forEach(item => {
         const cartItem = document.createElement('div');
         cartItem.classList.add('cart-item');
-        cartItem.innerHTML = /*html*/`
+        cartItem.innerHTML = `
             <div class="cart-item-photo">
                 <img src="./media/products/${item.photos[0]}" alt="${item.title}">
             </div>
             <div class="cart-item-details">
                 <div class="cart-item-title">${item.title}</div>
                 <div class="cart-item-price">USD ${item.price.toFixed(2)}</div>
-                <div class="cart-item-quantity">
+                <div class="quantity-controls">
                     <button class="quantity-decrease">-</button>
                     <input type="number" class="quantity-input" value="${item.cantidadComprada}" min="1" data-id="${item.id_product}">
                     <button class="quantity-increase">+</button>
                 </div>
-                <div class="cart-item-remove">
-                    <button class="remove-item" data-id="${item.id_product}">Eliminar</button>
-                </div>
+                <button class="remove-item" data-id="${item.id_product}">Eliminar</button>
             </div>
         `;
         cartItemsContainer.appendChild(cartItem);
     });
 
-    // Calcular el resumen de la compra
     calculateSummary(cart);
     addEventListeners(cart);
 }
@@ -44,15 +41,28 @@ function loadCart() {
 function calculateSummary(cart) {
     const summaryContainer = document.querySelector('.summary');
     const subtotal = cart.reduce((acc, item) => acc + item.price * item.cantidadComprada, 0);
-    const igv = subtotal * 0.05;  // 5% de IGV
+    const igv = subtotal * 0.18;  
     const total = subtotal + igv;
 
-    summaryContainer.innerHTML = /*html*/`
+    summaryContainer.innerHTML = `
         <div><strong>Subtotal:</strong> USD ${subtotal.toFixed(2)}</div>
-        <div><strong>IGV (5%):</strong> USD ${igv.toFixed(2)}</div>
+        <div><strong>IGV (18%):</strong> USD ${igv.toFixed(2)}</div>
         <div><strong>Total:</strong> USD ${total.toFixed(2)}</div>
         <button class="checkout-btn">Finalizar compra</button>
     `;
+
+    // Evento para animar el carrito al finalizar la compra
+    const checkoutBtn = summaryContainer.querySelector('.checkout-btn');
+    checkoutBtn.addEventListener('click', () => {
+        const cartItemsContainer = document.querySelector('.cart-items');
+        cartItemsContainer.classList.add('slide-in');
+
+        setTimeout(() => {
+            alert('Gracias por tu compra.');
+            localStorage.removeItem('cart'); // Limpia el carrito
+            loadCart(); // Recarga la página
+        }, 500);
+    });
 }
 
 function addEventListeners(cart) {
