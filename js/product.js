@@ -1,4 +1,5 @@
 import bd_data from './../data-presets/data1.js';
+import configShop from './server.js';
 import { printForYou } from './home.js';
 
 function getQueryParam(param) {
@@ -7,11 +8,13 @@ function getQueryParam(param) {
 }
 
 function showProductNotFound() {
+    document.title = '404 | Producto no encontrado :('
     const productContainer = document.querySelector('.product-container');
     productContainer.innerHTML = '<p>Producto no encontrado.</p>';
 }
 
 function updateDOMWithProduct(product) {
+    document.title = product.title + ' | ' + configShop.nameCommecial
     const productImageContainer = document.querySelector('.carousel-images');
     const productTitle = document.querySelector('.product-details h1');
     const productPrice = document.querySelector('.product-details .product-price');
