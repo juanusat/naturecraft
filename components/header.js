@@ -15,7 +15,7 @@ export const createHeader = () => {
                         <img src="./media/brand/brand-logo-st.svg" alt="logo">
                     </a>
                     <a class="btn-change-mode-login"
-                        href="${site_mark=='login'?'registro':'iniciarsesion'}.html">
+                        href="${site_mark=='login'?'registro':'iniciar-sesion'}.html">
                         ${site_mark=='login'?'Registrarme':'Iniciar sesión'}
                     </a>
                 </div>
