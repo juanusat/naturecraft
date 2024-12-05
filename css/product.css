@@ -1,4 +1,7 @@
 @import url(numbers-pages.css);
+.grid-products {
+    max-width: 100%;
+}
 
 .product-container {
     display: grid;

@@ -10,29 +10,32 @@ function printBestProducts(limit) {
         $('#bestSellers .carrousel-items').append(productCard);
     });
 }
-printBestProducts(6)
-function printForYou(limit) {
+export function printForYou(limit, queryContainer) {
     const sortedProducts = bd_data.products.sort(() => Math.random() - 0.5);
     const limitedProducts = sortedProducts.slice(0, limit);
     limitedProducts.forEach(product => {
         const productCard = cardProduct(product);
-        $('#forYou .grid-products').append(productCard);
+        $(queryContainer).append(productCard);
     });
 }
-printForYou(18)
-const carrouselItems = document.querySelector('.carrousel-items');
-
-function updateCarrouselAlignment() {
-  if (carrouselItems.scrollWidth > carrouselItems.clientWidth) {
-    carrouselItems.classList.remove('centered');
-    carrouselItems.classList.add('scrolled');
-  } else {
-    carrouselItems.classList.remove('scrolled');
-    carrouselItems.classList.add('centered');
+if (document.title.toLocaleLowerCase().includes('inicio')) {
+  printBestProducts(6)
+  printForYou(18, '#forYou .grid-products')
+  const carrouselItems = document.querySelector('.carrousel-items');
+  
+  function updateCarrouselAlignment() {
+    if (carrouselItems.scrollWidth > carrouselItems.clientWidth) {
+      carrouselItems.classList.remove('centered');
+      carrouselItems.classList.add('scrolled');
+    } else {
+      carrouselItems.classList.remove('scrolled');
+      carrouselItems.classList.add('centered');
+    }
   }
+  window.addEventListener('load', updateCarrouselAlignment);
+  window.addEventListener('resize', updateCarrouselAlignment);
 }
-window.addEventListener('load', updateCarrouselAlignment);
-window.addEventListener('resize', updateCarrouselAlignment);
+
 /*
 let cardProduct = $('.card-product-item-reg')
 let z = 56

@@ -1,4 +1,5 @@
 import bd_data from './../data-presets/data1.js';
+import { printForYou } from './home.js';
 
 function getQueryParam(param) {
     const urlParams = new URLSearchParams(window.location.search);
@@ -84,5 +85,5 @@ function main() {
     initCarousel();
     addCarouselEventListeners();
 }
-
+printForYou(8, '.grid-products.grid-fy')
 main();
