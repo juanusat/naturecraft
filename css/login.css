@@ -65,6 +65,9 @@ label .label-text {
     border-radius: 12px;
     padding: 12px 24px;
     font-size: 16px;
+    text-align: center;
+    display: block;
+    width: 100%;
 }
 
 .group-form .btn-enviar:hover {

@@ -642,3 +642,6 @@ header.login-page .header-top-box {
     background-color: var(--color-t-1);
     color: var(--naranja1);
 }
+.link-site {
+    font-weight: bold;
+}

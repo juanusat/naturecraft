@@ -1,3 +1,5 @@
+import { $ } from './../components/utils.js';
+
 function loadCart() {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     const cartItemsContainer = document.querySelector('.cart-items');
@@ -8,20 +10,29 @@ function loadCart() {
     summaryContainer.innerHTML = '';
 
     if (cart.length === 0) {
+        $('.grid-panel-product').classList.add('empty')
         cartItemsContainer.innerHTML = `
-            <p>Tu carrito está vacío. <a href="./index.html" class="link">¡Agrega productos!</a></p>`;
+            <p>Tu carrito está vacío. <a href="./index.html" class="link-empty-car">¡Agrega productos!</a></p>`;
         return;
     }
 
     cart.forEach(item => {
         const cartItem = document.createElement('div');
         cartItem.classList.add('cart-item');
+        const fullStars = Math.round(item.rating);
+        const starsHTML = Array.from({ length: 5 }, (_, index) => {
+            return index < fullStars
+                ? '<i class="fa-solid fa-star"></i>'
+                : '<i class="fa-regular fa-star"></i>';
+        }).join('');
+    
         cartItem.innerHTML = `
             <div class="cart-item-photo">
                 <img src="./media/products/${item.photos[0]}" alt="${item.title}">
             </div>
             <div class="cart-item-details">
                 <div class="cart-item-title">${item.title}</div>
+                <div class="cart-item-stars">${starsHTML}</div>
                 <div class="cart-item-price">USD ${item.price.toFixed(2)}</div>
                 <div class="quantity-controls">
                     <button class="quantity-decrease">-</button>

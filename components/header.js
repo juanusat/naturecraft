@@ -179,5 +179,12 @@ export const createHeader = () => {
         btnMobileOpen.addEventListener('click', function() {
             $('.center-bar-search-container').classList.add('mobile-open')
         })
+        header.querySelectorAll('a').forEach(function(a) {
+            if (a.hasAttribute('href')) {
+                if (location.href.includes(a.getAttribute('href'))) {
+                    a.classList.add('link-site')
+                }
+            }
+        })
     }
 };

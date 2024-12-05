@@ -2,6 +2,7 @@ import { $ } from './../components/utils.js';
 import { createHeader } from './../components/header.js';
 import { createFooter } from './../components/footer.js';
 import configShop from './server.js';
+import { createElement } from '../components/composer.js';
 
 const init = () => {
     let titleText = $('#current-site:not([data-pre])');
@@ -35,10 +36,22 @@ const init = () => {
     });
 
     
-    const loader = document.getElementById('loader');
-    setTimeout(() => {
-        loader.style.display = 'none'; 
-    }, 1000);
+    let loaderBox = createElement('div', {
+        className: 'loader-cont',
+        innerHTML: /*html*/`
+            <span class="loader"></span>
+        `
+    })
+    document.body.appendChild(loaderBox)
+    document.body.classList.add('load')
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            loaderBox.classList.add('close')
+            setTimeout(function() {
+                loaderBox.remove()
+            }, 300)
+        }, 1200)
+    })
 };
 
 init();
