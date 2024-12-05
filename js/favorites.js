@@ -13,6 +13,7 @@ function printSimilarFavorites(limit) {
 function printFavorites() {
     const favorites = JSON.parse(localStorage.getItem('dataSite_account'))?.favorites || [];
     const favoritesContainer = $('#favorites .grid-products');
+    favoritesContainer.innerHTML = ''
 
     if (favorites.length === 0) {
         $('.favorites-header').style.display = 'none'
@@ -23,7 +24,7 @@ function printFavorites() {
         `;
     } else {
         favorites.forEach(favoriteId => {
-            const product = bd_data.products.find(product => product.product_id === favoriteId);
+            const product = bd_data.products.find(product => product.id_product === favoriteId);
             if (product) {
                 const productCard = cardProduct(product);
                 favoritesContainer.append(productCard);
@@ -34,3 +35,4 @@ function printFavorites() {
 
 printSimilarFavorites(12);
 printFavorites();
+window.printFavs = printFavorites;

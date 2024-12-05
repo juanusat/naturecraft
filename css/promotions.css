@@ -18,6 +18,12 @@
     display: grid;
     grid-auto-flow: row;
     grid-template-rows: 150px auto;
+    transition: all 0.3s;
+    box-shadow: 0px 4px 2px 0px #58300265;
+}
+.promotion-container:hover {
+    box-shadow: 0px 4px 16px 0px #00000065;
+    transform: translateY(-2px);
 }
 .promotion-container picture {
     height: 100%;

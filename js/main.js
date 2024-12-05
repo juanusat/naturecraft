@@ -4,7 +4,7 @@ import { createFooter } from './../components/footer.js';
 import configShop from './server.js'
 
 const init = () => {
-    let titleText = $('#current-site')
+    let titleText = $('#current-site:not([data-pre])')
     if (titleText) {
         titleText.innerText = document.title
     }

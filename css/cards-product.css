@@ -40,6 +40,10 @@
     box-shadow: 0px 8px 10px -2px #00000045;
     transform: translateY(-6px) scale(1.01);
 }
+.card-product-item-reg.marked-favorite .icon-favorite {
+    background-color: var(--naranja1) !important;
+    color: var(--color-t-1);
+}
 .card-product-item-reg .photo {
     width: 100%;
     display: flex;

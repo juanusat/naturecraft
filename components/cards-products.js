@@ -45,9 +45,31 @@ export const cardProduct = (product, showBtnAddCart = false) => {
     productItem.addEventListener('click', function(e) {
         if (e.target.closest('.icon-favorite')) {
             e.preventDefault()
-            alert('Le dio like a un producto')
+            let idProd = product.id_product
+            let datLS = JSON.parse(localStorage.getItem('dataSite_account')) || {}
+            datLS['favorites'] = datLS['favorites'] || []
+            if (datLS['favorites'].includes(idProd)) {
+                if (confirm('Este elemento ya está en sus favoritos. ¿Desea eliminarlo?')) {
+                    productItem.classList.remove('marked-favorite')
+                    datLS['favorites'] = datLS['favorites'].filter(favId => favId !== idProd);
+                    alert('El producto ha sido eliminado de sus favoritos.');
+                }
+            } else {
+                productItem.classList.add('marked-favorite')
+                datLS['favorites'].push(idProd);
+                alert('El producto ha sido añadido a sus favoritos.');
+            }
+            localStorage.setItem('dataSite_account', JSON.stringify(datLS));
+            if (typeof window.printFavs == 'function') {
+                window.printFavs()
+            }
         }
     })
+    let datLS = JSON.parse(localStorage.getItem('dataSite_account')) || {}
+    datLS['favorites'] = datLS['favorites'] || []
+    if (datLS['favorites'].includes(product.id_product)) {
+        productItem.classList.add('marked-favorite')
+    }
     if (showBtnAddCart) {
         productItem.innerHTML += /*html*/`
             <button class="btn-add-cart">

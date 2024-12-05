@@ -62,7 +62,7 @@ export const createHeader = () => {
                         <a class="color-t-n2" href="favorites.html">
                             <i class="fa-solid fa-heart"></i>
                         </a>
-                        <a class="color-t-n2" href="carrito.html">
+                        <a class="color-t-n2" href="car.html">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </a>
                     </div>
@@ -86,7 +86,7 @@ export const createHeader = () => {
                     <a class="color-t-n2" href="favorites.html">
                         <i class="fa-solid fa-heart"></i><span>Favoritos</span>
                     </a>
-                    <a class="color-t-n2" href="carrito.html">
+                    <a class="color-t-n2" href="car.html">
                         <i class="fa-solid fa-cart-shopping"></i><span>Carrito</span>
                     </a>
                 </div>
@@ -131,7 +131,6 @@ export const createHeader = () => {
         let btnMobileOpen = $('.mobile-search-box')
         searchIpt.addEventListener('input', function() {
             let query = searchIpt.value.trim()
-            console.log(query)
             searchResults.innerHTML = ''
             if (query) {
                 searchBox.classList.add('open')

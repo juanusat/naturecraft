@@ -1,0 +1,141 @@
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.cart-item-photo img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cart-item-price {
+    font-size: 16px;
+    color: #333;
+}
+
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.quantity-decrease,
+.quantity-increase {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.quantity-decrease:hover,
+.quantity-increase:hover {
+    background-color: #e0e0e0;
+}
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.cart-item-remove {
+    margin-top: 10px;
+}
+
+.remove-item {
+    background-color: #ff4747;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.remove-item:hover {
+    background-color: #e03e3e;
+}
+
+.summary {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.summary div {
+    margin-bottom: 10px;
+}
+
+.checkout-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.checkout-btn:hover {
+    background-color: #45a049;
+}
+
+.payment-methods {
+    display: flex;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.payment-methods label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.payment-methods input {
+    margin-right: 10px;
+}
+
+@media (min-width: 600px) {
+    .cart-items {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .cart-items .cart-item {
+        flex: 1;
+    }
+
+    .summary {
+        flex: 0 0 300px;
+        margin-top: 0;
+    }
+}
